@@ -1,0 +1,5940 @@
+{
+  "continent": "洄原",
+  "width": 1570,
+  "height": 1002,
+  "country_count": 12,
+  "district_count": 60,
+  "countries": [
+    {
+      "code": "H01",
+      "name": "瓜陵汗国",
+      "civilization": "瓜凉",
+      "capital": "衡帐",
+      "leader": "阿速·忽宁",
+      "population_wan": 680,
+      "x": 490,
+      "y": 270,
+      "districts": [
+        {
+          "code": "H01-01",
+          "name": "王帐旗",
+          "capital": "衡帐",
+          "official_title": "都护",
+          "official_name": "阿速·帖温",
+          "faction": "王庭收籍派",
+          "population_wan": 160,
+          "geography": "谷口农田与王庭冬营",
+          "x": 462,
+          "y": 246,
+          "mark": "H01·01"
+        },
+        {
+          "code": "H01-02",
+          "name": "青鬃旗",
+          "capital": "青鬃原",
+          "official_title": "旗领",
+          "official_name": "苏尔沁·阿黛",
+          "faction": "牧道保留派",
+          "population_wan": 110,
+          "geography": "北部开阔草原与冬草圩",
+          "x": 513,
+          "y": 231,
+          "mark": "H01·02"
+        },
+        {
+          "code": "H01-03",
+          "name": "鹿泉镇领",
+          "capital": "鹿泉城",
+          "official_title": "镇监",
+          "official_name": "颜仲肃",
+          "faction": "粮仓吏派",
+          "population_wan": 180,
+          "geography": "灌溉小麦地与驿站",
+          "x": 447,
+          "y": 288,
+          "mark": "H01·03"
+        },
+        {
+          "code": "H01-04",
+          "name": "乌陇旗",
+          "capital": "乌陇堡",
+          "official_title": "旗领",
+          "official_name": "贝勒·失兰",
+          "faction": "边军派",
+          "population_wan": 90,
+          "geography": "西山坡地、盐井与马市",
+          "x": 525,
+          "y": 285,
+          "mark": "H01·04"
+        },
+        {
+          "code": "H01-05",
+          "name": "东辕领",
+          "capital": "辕城",
+          "official_title": "领监",
+          "official_name": "麻延之",
+          "faction": "王庭收籍派",
+          "population_wan": 140,
+          "geography": "东南谷地与宸渠边界",
+          "x": 489,
+          "y": 318,
+          "mark": "H01·05"
+        }
+      ]
+    },
+    {
+      "code": "H02",
+      "name": "宸渠公国",
+      "civilization": "瓜凉",
+      "capital": "渠宁",
+      "leader": "阿速·伊勒",
+      "population_wan": 320,
+      "x": 650,
+      "y": 410,
+      "districts": [
+        {
+          "code": "H02-01",
+          "name": "渠宁领",
+          "capital": "渠宁",
+          "official_title": "领监",
+          "official_name": "温思渠",
+          "faction": "均摊派",
+          "population_wan": 85,
+          "geography": "中央渠首与文书学校",
+          "x": 621,
+          "y": 384,
+          "mark": "H02·01"
+        },
+        {
+          "code": "H02-02",
+          "name": "柳闸灌区",
+          "capital": "柳闸",
+          "official_title": "渠正",
+          "official_name": "白克·阿娅",
+          "faction": "下游保水派",
+          "population_wan": 70,
+          "geography": "干渠中段与柳林",
+          "x": 675,
+          "y": 372,
+          "mark": "H02·02"
+        },
+        {
+          "code": "H02-03",
+          "name": "麦台领",
+          "capital": "麦台城",
+          "official_title": "领监",
+          "official_name": "贺延昌",
+          "faction": "田主保额派",
+          "population_wan": 65,
+          "geography": "高台粮地与旱渠",
+          "x": 606,
+          "y": 429,
+          "mark": "H02·03"
+        },
+        {
+          "code": "H02-04",
+          "name": "锁河灌区",
+          "capital": "锁河镇",
+          "official_title": "渠正",
+          "official_name": "杜兰·索赫",
+          "faction": "上游旧额派",
+          "population_wan": 55,
+          "geography": "山口取水闸与石灰窑",
+          "x": 693,
+          "y": 426,
+          "mark": "H02·04"
+        },
+        {
+          "code": "H02-05",
+          "name": "南圩灌区",
+          "capital": "南圩",
+          "official_title": "渠正",
+          "official_name": "宋知盈",
+          "faction": "佃户减役派",
+          "population_wan": 45,
+          "geography": "末渠低地与季节渍田",
+          "x": 654,
+          "y": 456,
+          "mark": "H02·05"
+        }
+      ]
+    },
+    {
+      "code": "H03",
+      "name": "阿勒温自由旗盟",
+      "civilization": "瓜凉",
+      "capital": "安勒会场",
+      "leader": "萨仁·阿芙",
+      "population_wan": 210,
+      "x": 239,
+      "y": 285,
+      "districts": [
+        {
+          "code": "H03-01",
+          "name": "安勒会旗",
+          "capital": "安勒会场",
+          "official_title": "会旗执事",
+          "official_name": "萨仁·乌图",
+          "faction": "轮牧协商派",
+          "population_wan": 45,
+          "geography": "中部会盟盆地与公共冬营",
+          "x": 210,
+          "y": 261,
+          "mark": "H03·01"
+        },
+        {
+          "code": "H03-02",
+          "name": "白苇旗",
+          "capital": "白苇营",
+          "official_title": "旗长",
+          "official_name": "塔尔沁·忽雅",
+          "faction": "小牧户派",
+          "population_wan": 32,
+          "geography": "西北河草滩",
+          "x": 264,
+          "y": 246,
+          "mark": "H03·02"
+        },
+        {
+          "code": "H03-03",
+          "name": "塔日旗",
+          "capital": "塔日镇",
+          "official_title": "旗长",
+          "official_name": "莫勒·图亥",
+          "faction": "大群保留派",
+          "population_wan": 40,
+          "geography": "北部长距离牧道",
+          "x": 192,
+          "y": 309,
+          "mark": "H03·03"
+        },
+        {
+          "code": "H03-04",
+          "name": "泉驿镇盟",
+          "capital": "泉驿",
+          "official_title": "镇盟长",
+          "official_name": "宁可言",
+          "faction": "市场开放派",
+          "population_wan": 60,
+          "geography": "南部定居市镇与盐粮互市",
+          "x": 273,
+          "y": 300,
+          "mark": "H03·04"
+        },
+        {
+          "code": "H03-05",
+          "name": "黑岚旗",
+          "capital": "黑岚营",
+          "official_title": "旗长",
+          "official_name": "伊兰·昆达",
+          "faction": "守境派",
+          "population_wan": 33,
+          "geography": "西部山口和林牧交错地",
+          "x": 243,
+          "y": 336,
+          "mark": "H03·05"
+        }
+      ]
+    },
+    {
+      "code": "H04",
+      "name": "芦桓王国",
+      "civilization": "芦赫",
+      "capital": "赫都",
+      "leader": "兰赛·雅维",
+      "population_wan": 910,
+      "x": 331,
+      "y": 550,
+      "districts": [
+        {
+          "code": "H04-01",
+          "name": "赫都郡",
+          "capital": "赫都",
+          "official_title": "郡守",
+          "official_name": "帕伦·提雅",
+          "faction": "王廷整税派",
+          "population_wan": 220,
+          "geography": "大湖东岸王都与织造",
+          "x": 300,
+          "y": 525,
+          "mark": "H04·01"
+        },
+        {
+          "code": "H04-02",
+          "name": "芦泽郡",
+          "capital": "芦泽城",
+          "official_title": "郡守",
+          "official_name": "里文·萨莉",
+          "faction": "湖户议价派",
+          "population_wan": 190,
+          "geography": "湖岸芦荡、渔村与稻田",
+          "x": 354,
+          "y": 510,
+          "mark": "H04·02"
+        },
+        {
+          "code": "H04-03",
+          "name": "延浦郡",
+          "capital": "延浦",
+          "official_title": "郡守",
+          "official_name": "索曼·赫里",
+          "faction": "船税吏派",
+          "population_wan": 180,
+          "geography": "西南主河与河港",
+          "x": 288,
+          "y": 567,
+          "mark": "H04·03"
+        },
+        {
+          "code": "H04-04",
+          "name": "沃岸郡",
+          "capital": "沃岸城",
+          "official_title": "郡守",
+          "official_name": "阿瓦·鲁延",
+          "faction": "田主派",
+          "population_wan": 170,
+          "geography": "东部冲积粮地",
+          "x": 366,
+          "y": 564,
+          "mark": "H04·04"
+        },
+        {
+          "code": "H04-05",
+          "name": "西垒郡",
+          "capital": "西垒",
+          "official_title": "郡守",
+          "official_name": "达勒·芬楚",
+          "faction": "边军节费派",
+          "population_wan": 150,
+          "geography": "西部丘陵和索弥边境",
+          "x": 336,
+          "y": 594,
+          "mark": "H04·05"
+        }
+      ]
+    },
+    {
+      "code": "H05",
+      "name": "索弥共和国",
+      "civilization": "芦赫",
+      "capital": "索弥",
+      "leader": "伊维·娜罗",
+      "population_wan": 480,
+      "x": 220,
+      "y": 711,
+      "districts": [
+        {
+          "code": "H05-01",
+          "name": "索弥市域",
+          "capital": "索弥",
+          "official_title": "市执政",
+          "official_name": "伊维·珀兰",
+          "faction": "公开账派",
+          "population_wan": 135,
+          "geography": "西海河口与中央船市",
+          "x": 192,
+          "y": 687,
+          "mark": "H05·01"
+        },
+        {
+          "code": "H05-02",
+          "name": "盐汊州",
+          "capital": "盐汊",
+          "official_title": "州执事",
+          "official_name": "赛德·欧林",
+          "faction": "盐业派",
+          "population_wan": 85,
+          "geography": "潮汊盐田与疏浚码头",
+          "x": 243,
+          "y": 672,
+          "mark": "H05·02"
+        },
+        {
+          "code": "H05-03",
+          "name": "长桥州",
+          "capital": "长桥城",
+          "official_title": "州执事",
+          "official_name": "鲁赫·安娜",
+          "faction": "乡席扩增派",
+          "population_wan": 100,
+          "geography": "桥道粮地和农具工坊",
+          "x": 177,
+          "y": 729,
+          "mark": "H05·03"
+        },
+        {
+          "code": "H05-04",
+          "name": "苇门州",
+          "capital": "苇门",
+          "official_title": "州执事",
+          "official_name": "芮达·赛温",
+          "faction": "行会旧席派",
+          "population_wan": 90,
+          "geography": "南岸织造城镇",
+          "x": 255,
+          "y": 726,
+          "mark": "H05·04"
+        },
+        {
+          "code": "H05-05",
+          "name": "外沙州",
+          "capital": "外沙港",
+          "official_title": "州执事",
+          "official_name": "图玛·埃米",
+          "faction": "港户派",
+          "population_wan": 70,
+          "geography": "外海沙洲和海堤",
+          "x": 216,
+          "y": 765,
+          "mark": "H05·05"
+        }
+      ]
+    },
+    {
+      "code": "H06",
+      "name": "卡雷侯领",
+      "civilization": "芦赫",
+      "capital": "维萨堡",
+      "leader": "维萨·艾伦",
+      "population_wan": 230,
+      "x": 400,
+      "y": 800,
+      "districts": [
+        {
+          "code": "H06-01",
+          "name": "堡畿领",
+          "capital": "维萨堡",
+          "official_title": "领务长",
+          "official_name": "维萨·托兰",
+          "faction": "侯廷维约派",
+          "population_wan": 55,
+          "geography": "侯堡、葡萄坡与军屯",
+          "x": 372,
+          "y": 774,
+          "mark": "H06·01"
+        },
+        {
+          "code": "H06-02",
+          "name": "绿汀领",
+          "capital": "绿汀",
+          "official_title": "领务长",
+          "official_name": "伊萨·莫恩",
+          "faction": "地租保额派",
+          "population_wan": 50,
+          "geography": "南湖湿地和稻田",
+          "x": 423,
+          "y": 762,
+          "mark": "H06·02"
+        },
+        {
+          "code": "H06-03",
+          "name": "燧湾市领",
+          "capital": "燧湾",
+          "official_title": "市领长",
+          "official_name": "鲁莎·梅尼",
+          "faction": "特许市派",
+          "population_wan": 48,
+          "geography": "南海港与染坊",
+          "x": 357,
+          "y": 819,
+          "mark": "H06·03"
+        },
+        {
+          "code": "H06-04",
+          "name": "石萄领",
+          "capital": "石萄镇",
+          "official_title": "领务长",
+          "official_name": "阿蒂·芬兰",
+          "faction": "小地主派",
+          "population_wan": 42,
+          "geography": "丘陵葡萄园和石材",
+          "x": 435,
+          "y": 816,
+          "mark": "H06·04"
+        },
+        {
+          "code": "H06-05",
+          "name": "东洼领",
+          "capital": "东洼",
+          "official_title": "领务长",
+          "official_name": "赫南·伊楚",
+          "faction": "佃约调停派",
+          "population_wan": 35,
+          "geography": "边界洼地与跨国佃田",
+          "x": 405,
+          "y": 846,
+          "mark": "H06·05"
+        }
+      ]
+    },
+    {
+      "code": "H07",
+      "name": "元溪合渠国",
+      "civilization": "大元溪",
+      "capital": "合流",
+      "leader": "邵明川",
+      "population_wan": 760,
+      "x": 650,
+      "y": 610,
+      "districts": [
+        {
+          "code": "H07-01",
+          "name": "合流渠区",
+          "capital": "合流",
+          "official_title": "渠区议正",
+          "official_name": "邵季和",
+          "faction": "联渠均衡派",
+          "population_wan": 180,
+          "geography": "两支河汇流与全国官署",
+          "x": 621,
+          "y": 585,
+          "mark": "H07·01"
+        },
+        {
+          "code": "H07-02",
+          "name": "北堰渠区",
+          "capital": "北堰",
+          "official_title": "渠区议正",
+          "official_name": "厉伯均",
+          "faction": "上堰保额派",
+          "population_wan": 150,
+          "geography": "山前总堰和纸坊",
+          "x": 675,
+          "y": 573,
+          "mark": "H07·02"
+        },
+        {
+          "code": "H07-03",
+          "name": "青畦渠区",
+          "capital": "青畦",
+          "official_title": "渠区议正",
+          "official_name": "蒋知禾",
+          "faction": "小田均水派",
+          "population_wan": 155,
+          "geography": "中央水田与蚕桑",
+          "x": 606,
+          "y": 627,
+          "mark": "H07·03"
+        },
+        {
+          "code": "H07-04",
+          "name": "蒲湾渠区",
+          "capital": "蒲湾城",
+          "official_title": "渠区议正",
+          "official_name": "蒲阿蓉",
+          "faction": "湖村共役派",
+          "population_wan": 145,
+          "geography": "西南湖汊和芦赫混居",
+          "x": 684,
+          "y": 624,
+          "mark": "H07·04"
+        },
+        {
+          "code": "H07-05",
+          "name": "东索渠区",
+          "capital": "东索",
+          "official_title": "渠区议正",
+          "official_name": "章维理",
+          "faction": "专业水工派",
+          "population_wan": 130,
+          "geography": "东部河谷和西宸接壤地",
+          "x": 654,
+          "y": 654,
+          "mark": "H07·05"
+        }
+      ]
+    },
+    {
+      "code": "H08",
+      "name": "百契公社联邦",
+      "civilization": "大元溪",
+      "capital": "契平",
+      "leader": "任秋秩",
+      "population_wan": 430,
+      "x": 650,
+      "y": 800,
+      "districts": [
+        {
+          "code": "H08-01",
+          "name": "契平社联",
+          "capital": "契平",
+          "official_title": "社联公署长",
+          "official_name": "任仲实",
+          "faction": "修约派",
+          "population_wan": 105,
+          "geography": "中央公署和粮棉工坊",
+          "x": 621,
+          "y": 774,
+          "mark": "H08·01"
+        },
+        {
+          "code": "H08-02",
+          "name": "桑陌社联",
+          "capital": "桑陌",
+          "official_title": "社联公署长",
+          "official_name": "乔绿婉",
+          "faction": "妇户资格派",
+          "population_wan": 90,
+          "geography": "桑园与织工村社",
+          "x": 675,
+          "y": 762,
+          "mark": "H08·02"
+        },
+        {
+          "code": "H08-03",
+          "name": "石渠社联",
+          "capital": "石渠",
+          "official_title": "社联公署长",
+          "official_name": "石守方",
+          "faction": "古约保留派",
+          "population_wan": 80,
+          "geography": "东部石渠与传统粮社",
+          "x": 606,
+          "y": 819,
+          "mark": "H08·03"
+        },
+        {
+          "code": "H08-04",
+          "name": "谷风社联",
+          "capital": "谷风",
+          "official_title": "社联公署长",
+          "official_name": "祝良平",
+          "faction": "外雇纳社派",
+          "population_wan": 85,
+          "geography": "南部旱田与移民新村",
+          "x": 684,
+          "y": 816,
+          "mark": "H08·04"
+        },
+        {
+          "code": "H08-05",
+          "name": "连浦社联",
+          "capital": "连浦",
+          "official_title": "社联公署长",
+          "official_name": "梅玉生",
+          "faction": "市社采购派",
+          "population_wan": 70,
+          "geography": "西侧河港和市场社",
+          "x": 654,
+          "y": 846,
+          "mark": "H08·05"
+        }
+      ]
+    },
+    {
+      "code": "H09",
+      "name": "荻文王国",
+      "civilization": "大元溪",
+      "capital": "文昌",
+      "leader": "荻弘谦",
+      "population_wan": 560,
+      "x": 916,
+      "y": 785,
+      "districts": [
+        {
+          "code": "H09-01",
+          "name": "文昌府",
+          "capital": "文昌",
+          "official_title": "府尹",
+          "official_name": "许静宜",
+          "faction": "王廷官学派",
+          "population_wan": 145,
+          "geography": "都城、官学与印书街",
+          "x": 888,
+          "y": 759,
+          "mark": "H09·01"
+        },
+        {
+          "code": "H09-02",
+          "name": "荻北府",
+          "capital": "北庠",
+          "official_title": "府尹",
+          "official_name": "荻承岳",
+          "faction": "宗室守额派",
+          "population_wan": 100,
+          "geography": "北部台地和宗室庄园",
+          "x": 939,
+          "y": 747,
+          "mark": "H09·02"
+        },
+        {
+          "code": "H09-03",
+          "name": "南砚府",
+          "capital": "南砚",
+          "official_title": "府尹",
+          "official_name": "曹文砚",
+          "faction": "经师派",
+          "population_wan": 115,
+          "geography": "南河纸墨业和学田",
+          "x": 873,
+          "y": 804,
+          "mark": "H09·03"
+        },
+        {
+          "code": "H09-04",
+          "name": "澜田府",
+          "capital": "澜田",
+          "official_title": "府尹",
+          "official_name": "柳毓青",
+          "faction": "实学派",
+          "population_wan": 110,
+          "geography": "西部稻麦轮作和农学",
+          "x": 951,
+          "y": 801,
+          "mark": "H09·04"
+        },
+        {
+          "code": "H09-05",
+          "name": "东泽府",
+          "capital": "泽口",
+          "official_title": "府尹",
+          "official_name": "罗宜舟",
+          "faction": "港务派",
+          "population_wan": 90,
+          "geography": "东南河口和船粮仓",
+          "x": 921,
+          "y": 831,
+          "mark": "H09·05"
+        }
+      ]
+    },
+    {
+      "code": "H10",
+      "name": "景廷王国",
+      "civilization": "霄安",
+      "capital": "景京",
+      "leader": "景绍晖",
+      "population_wan": 920,
+      "x": 950,
+      "y": 445,
+      "districts": [
+        {
+          "code": "H10-01",
+          "name": "景京府",
+          "capital": "景京",
+          "official_title": "府尹",
+          "official_name": "沈廷裕",
+          "faction": "廷制修补派",
+          "population_wan": 245,
+          "geography": "旧朝西廷与新王都",
+          "x": 921,
+          "y": 420,
+          "mark": "H10·01"
+        },
+        {
+          "code": "H10-02",
+          "name": "望川省",
+          "capital": "望川",
+          "official_title": "省监",
+          "official_name": "霍仲谨",
+          "faction": "税册保额派",
+          "population_wan": 200,
+          "geography": "北部旧驿和瓜凉混居",
+          "x": 975,
+          "y": 408,
+          "mark": "H10·02"
+        },
+        {
+          "code": "H10-03",
+          "name": "仪陆省",
+          "capital": "仪陆",
+          "official_title": "省监",
+          "official_name": "蒋仪成",
+          "faction": "礼学派",
+          "population_wan": 175,
+          "geography": "内陆旱田与宗庙",
+          "x": 906,
+          "y": 462,
+          "mark": "H10·03"
+        },
+        {
+          "code": "H10-04",
+          "name": "青门省",
+          "capital": "青门",
+          "official_title": "省监",
+          "official_name": "苏澄礼",
+          "faction": "港仓务派",
+          "population_wan": 165,
+          "geography": "镜门海北段港口",
+          "x": 984,
+          "y": 459,
+          "mark": "H10·04"
+        },
+        {
+          "code": "H10-05",
+          "name": "南屏省",
+          "capital": "南屏",
+          "official_title": "省监",
+          "official_name": "叶维素",
+          "faction": "议税派",
+          "population_wan": 135,
+          "geography": "南部关隘与西宸边界",
+          "x": 954,
+          "y": 489,
+          "mark": "H10·05"
+        }
+      ]
+    },
+    {
+      "code": "H11",
+      "name": "西宸联省",
+      "civilization": "霄安",
+      "capital": "联津",
+      "leader": "唐予衡",
+      "population_wan": 610,
+      "x": 1079,
+      "y": 670,
+      "districts": [
+        {
+          "code": "H11-01",
+          "name": "联津省",
+          "capital": "联津",
+          "official_title": "省执政",
+          "official_name": "唐宜修",
+          "faction": "债务统筹派",
+          "population_wan": 160,
+          "geography": "中央会院、银市和跨海港",
+          "x": 1050,
+          "y": 645,
+          "mark": "H11·01"
+        },
+        {
+          "code": "H11-02",
+          "name": "旧仓省",
+          "capital": "旧仓",
+          "official_title": "省执政",
+          "official_name": "俞南颂",
+          "faction": "仓役减免派",
+          "population_wan": 125,
+          "geography": "北部旧粮仓和农田",
+          "x": 1104,
+          "y": 633,
+          "mark": "H11·02"
+        },
+        {
+          "code": "H11-03",
+          "name": "广济省",
+          "capital": "广济",
+          "official_title": "省执政",
+          "official_name": "董明珂",
+          "faction": "港货派",
+          "population_wan": 125,
+          "geography": "海岸造船和盐业",
+          "x": 1035,
+          "y": 687,
+          "mark": "H11·03"
+        },
+        {
+          "code": "H11-04",
+          "name": "安越省",
+          "capital": "安越",
+          "official_title": "省执政",
+          "official_name": "颜若存",
+          "faction": "地方税权派",
+          "population_wan": 105,
+          "geography": "西部山谷和元溪居民",
+          "x": 1113,
+          "y": 684,
+          "mark": "H11·04"
+        },
+        {
+          "code": "H11-05",
+          "name": "南泽省",
+          "capital": "南泽",
+          "official_title": "省执政",
+          "official_name": "陆知葵",
+          "faction": "乡役均摊派",
+          "population_wan": 95,
+          "geography": "南海岸和荻文边境",
+          "x": 1083,
+          "y": 714,
+          "mark": "H11·05"
+        }
+      ]
+    },
+    {
+      "code": "H12",
+      "name": "北斗海盟",
+      "civilization": "七斗",
+      "capital": "纽帆",
+      "leader": "纳赫·瑟雅",
+      "population_wan": 290,
+      "x": 990,
+      "y": 213,
+      "districts": [
+        {
+          "code": "H12-01",
+          "name": "纽帆港盟",
+          "capital": "纽帆",
+          "official_title": "港盟召集人",
+          "official_name": "纳赫·阿伊",
+          "faction": "共舰派",
+          "population_wan": 85,
+          "geography": "近岸主港岛、船材仓与中央盟会",
+          "x": 996,
+          "y": 114,
+          "mark": "H12·01"
+        },
+        {
+          "code": "H12-02",
+          "name": "星沙岛盟",
+          "capital": "星沙",
+          "official_title": "岛盟召集人",
+          "official_name": "艾萨·汀罗",
+          "faction": "岛自治派",
+          "population_wan": 45,
+          "geography": "东北浅海群岛",
+          "x": 1089,
+          "y": 117,
+          "mark": "H12·02"
+        },
+        {
+          "code": "H12-03",
+          "name": "长潮岸盟",
+          "capital": "长潮",
+          "official_title": "岸盟召集人",
+          "official_name": "苏玛·依伦",
+          "faction": "渔户派",
+          "population_wan": 60,
+          "geography": "大陆较小东岸带、渔盐地",
+          "x": 1032,
+          "y": 237,
+          "mark": "H12·03"
+        },
+        {
+          "code": "H12-04",
+          "name": "双灯港盟",
+          "capital": "双灯",
+          "official_title": "港盟召集人",
+          "official_name": "梅洛·卡娜",
+          "faction": "外商互保派",
+          "population_wan": 55,
+          "geography": "东侧中岛两港",
+          "x": 1125,
+          "y": 210,
+          "mark": "H12·04"
+        },
+        {
+          "code": "H12-05",
+          "name": "雾舟岛盟",
+          "capital": "雾舟",
+          "official_title": "岛盟召集人",
+          "official_name": "塔维·欧赛",
+          "faction": "独航派",
+          "population_wan": 45,
+          "geography": "外海东岛、深水远航船队",
+          "x": 1221,
+          "y": 249,
+          "mark": "H12·05"
+        }
+      ]
+    }
+  ],
+  "districts": [
+    {
+      "code": "H01-01",
+      "name": "王帐旗",
+      "capital": "衡帐",
+      "official_title": "都护",
+      "official_name": "阿速·帖温",
+      "faction": "王庭收籍派",
+      "population_wan": 160,
+      "geography": "谷口农田与王庭冬营",
+      "x": 462,
+      "y": 246,
+      "mark": "H01·01",
+      "country": "瓜陵汗国",
+      "country_code": "H01"
+    },
+    {
+      "code": "H01-02",
+      "name": "青鬃旗",
+      "capital": "青鬃原",
+      "official_title": "旗领",
+      "official_name": "苏尔沁·阿黛",
+      "faction": "牧道保留派",
+      "population_wan": 110,
+      "geography": "北部开阔草原与冬草圩",
+      "x": 513,
+      "y": 231,
+      "mark": "H01·02",
+      "country": "瓜陵汗国",
+      "country_code": "H01"
+    },
+    {
+      "code": "H01-03",
+      "name": "鹿泉镇领",
+      "capital": "鹿泉城",
+      "official_title": "镇监",
+      "official_name": "颜仲肃",
+      "faction": "粮仓吏派",
+      "population_wan": 180,
+      "geography": "灌溉小麦地与驿站",
+      "x": 447,
+      "y": 288,
+      "mark": "H01·03",
+      "country": "瓜陵汗国",
+      "country_code": "H01"
+    },
+    {
+      "code": "H01-04",
+      "name": "乌陇旗",
+      "capital": "乌陇堡",
+      "official_title": "旗领",
+      "official_name": "贝勒·失兰",
+      "faction": "边军派",
+      "population_wan": 90,
+      "geography": "西山坡地、盐井与马市",
+      "x": 525,
+      "y": 285,
+      "mark": "H01·04",
+      "country": "瓜陵汗国",
+      "country_code": "H01"
+    },
+    {
+      "code": "H01-05",
+      "name": "东辕领",
+      "capital": "辕城",
+      "official_title": "领监",
+      "official_name": "麻延之",
+      "faction": "王庭收籍派",
+      "population_wan": 140,
+      "geography": "东南谷地与宸渠边界",
+      "x": 489,
+      "y": 318,
+      "mark": "H01·05",
+      "country": "瓜陵汗国",
+      "country_code": "H01"
+    },
+    {
+      "code": "H02-01",
+      "name": "渠宁领",
+      "capital": "渠宁",
+      "official_title": "领监",
+      "official_name": "温思渠",
+      "faction": "均摊派",
+      "population_wan": 85,
+      "geography": "中央渠首与文书学校",
+      "x": 621,
+      "y": 384,
+      "mark": "H02·01",
+      "country": "宸渠公国",
+      "country_code": "H02"
+    },
+    {
+      "code": "H02-02",
+      "name": "柳闸灌区",
+      "capital": "柳闸",
+      "official_title": "渠正",
+      "official_name": "白克·阿娅",
+      "faction": "下游保水派",
+      "population_wan": 70,
+      "geography": "干渠中段与柳林",
+      "x": 675,
+      "y": 372,
+      "mark": "H02·02",
+      "country": "宸渠公国",
+      "country_code": "H02"
+    },
+    {
+      "code": "H02-03",
+      "name": "麦台领",
+      "capital": "麦台城",
+      "official_title": "领监",
+      "official_name": "贺延昌",
+      "faction": "田主保额派",
+      "population_wan": 65,
+      "geography": "高台粮地与旱渠",
+      "x": 606,
+      "y": 429,
+      "mark": "H02·03",
+      "country": "宸渠公国",
+      "country_code": "H02"
+    },
+    {
+      "code": "H02-04",
+      "name": "锁河灌区",
+      "capital": "锁河镇",
+      "official_title": "渠正",
+      "official_name": "杜兰·索赫",
+      "faction": "上游旧额派",
+      "population_wan": 55,
+      "geography": "山口取水闸与石灰窑",
+      "x": 693,
+      "y": 426,
+      "mark": "H02·04",
+      "country": "宸渠公国",
+      "country_code": "H02"
+    },
+    {
+      "code": "H02-05",
+      "name": "南圩灌区",
+      "capital": "南圩",
+      "official_title": "渠正",
+      "official_name": "宋知盈",
+      "faction": "佃户减役派",
+      "population_wan": 45,
+      "geography": "末渠低地与季节渍田",
+      "x": 654,
+      "y": 456,
+      "mark": "H02·05",
+      "country": "宸渠公国",
+      "country_code": "H02"
+    },
+    {
+      "code": "H03-01",
+      "name": "安勒会旗",
+      "capital": "安勒会场",
+      "official_title": "会旗执事",
+      "official_name": "萨仁·乌图",
+      "faction": "轮牧协商派",
+      "population_wan": 45,
+      "geography": "中部会盟盆地与公共冬营",
+      "x": 210,
+      "y": 261,
+      "mark": "H03·01",
+      "country": "阿勒温自由旗盟",
+      "country_code": "H03"
+    },
+    {
+      "code": "H03-02",
+      "name": "白苇旗",
+      "capital": "白苇营",
+      "official_title": "旗长",
+      "official_name": "塔尔沁·忽雅",
+      "faction": "小牧户派",
+      "population_wan": 32,
+      "geography": "西北河草滩",
+      "x": 264,
+      "y": 246,
+      "mark": "H03·02",
+      "country": "阿勒温自由旗盟",
+      "country_code": "H03"
+    },
+    {
+      "code": "H03-03",
+      "name": "塔日旗",
+      "capital": "塔日镇",
+      "official_title": "旗长",
+      "official_name": "莫勒·图亥",
+      "faction": "大群保留派",
+      "population_wan": 40,
+      "geography": "北部长距离牧道",
+      "x": 192,
+      "y": 309,
+      "mark": "H03·03",
+      "country": "阿勒温自由旗盟",
+      "country_code": "H03"
+    },
+    {
+      "code": "H03-04",
+      "name": "泉驿镇盟",
+      "capital": "泉驿",
+      "official_title": "镇盟长",
+      "official_name": "宁可言",
+      "faction": "市场开放派",
+      "population_wan": 60,
+      "geography": "南部定居市镇与盐粮互市",
+      "x": 273,
+      "y": 300,
+      "mark": "H03·04",
+      "country": "阿勒温自由旗盟",
+      "country_code": "H03"
+    },
+    {
+      "code": "H03-05",
+      "name": "黑岚旗",
+      "capital": "黑岚营",
+      "official_title": "旗长",
+      "official_name": "伊兰·昆达",
+      "faction": "守境派",
+      "population_wan": 33,
+      "geography": "西部山口和林牧交错地",
+      "x": 243,
+      "y": 336,
+      "mark": "H03·05",
+      "country": "阿勒温自由旗盟",
+      "country_code": "H03"
+    },
+    {
+      "code": "H04-01",
+      "name": "赫都郡",
+      "capital": "赫都",
+      "official_title": "郡守",
+      "official_name": "帕伦·提雅",
+      "faction": "王廷整税派",
+      "population_wan": 220,
+      "geography": "大湖东岸王都与织造",
+      "x": 300,
+      "y": 525,
+      "mark": "H04·01",
+      "country": "芦桓王国",
+      "country_code": "H04"
+    },
+    {
+      "code": "H04-02",
+      "name": "芦泽郡",
+      "capital": "芦泽城",
+      "official_title": "郡守",
+      "official_name": "里文·萨莉",
+      "faction": "湖户议价派",
+      "population_wan": 190,
+      "geography": "湖岸芦荡、渔村与稻田",
+      "x": 354,
+      "y": 510,
+      "mark": "H04·02",
+      "country": "芦桓王国",
+      "country_code": "H04"
+    },
+    {
+      "code": "H04-03",
+      "name": "延浦郡",
+      "capital": "延浦",
+      "official_title": "郡守",
+      "official_name": "索曼·赫里",
+      "faction": "船税吏派",
+      "population_wan": 180,
+      "geography": "西南主河与河港",
+      "x": 288,
+      "y": 567,
+      "mark": "H04·03",
+      "country": "芦桓王国",
+      "country_code": "H04"
+    },
+    {
+      "code": "H04-04",
+      "name": "沃岸郡",
+      "capital": "沃岸城",
+      "official_title": "郡守",
+      "official_name": "阿瓦·鲁延",
+      "faction": "田主派",
+      "population_wan": 170,
+      "geography": "东部冲积粮地",
+      "x": 366,
+      "y": 564,
+      "mark": "H04·04",
+      "country": "芦桓王国",
+      "country_code": "H04"
+    },
+    {
+      "code": "H04-05",
+      "name": "西垒郡",
+      "capital": "西垒",
+      "official_title": "郡守",
+      "official_name": "达勒·芬楚",
+      "faction": "边军节费派",
+      "population_wan": 150,
+      "geography": "西部丘陵和索弥边境",
+      "x": 336,
+      "y": 594,
+      "mark": "H04·05",
+      "country": "芦桓王国",
+      "country_code": "H04"
+    },
+    {
+      "code": "H05-01",
+      "name": "索弥市域",
+      "capital": "索弥",
+      "official_title": "市执政",
+      "official_name": "伊维·珀兰",
+      "faction": "公开账派",
+      "population_wan": 135,
+      "geography": "西海河口与中央船市",
+      "x": 192,
+      "y": 687,
+      "mark": "H05·01",
+      "country": "索弥共和国",
+      "country_code": "H05"
+    },
+    {
+      "code": "H05-02",
+      "name": "盐汊州",
+      "capital": "盐汊",
+      "official_title": "州执事",
+      "official_name": "赛德·欧林",
+      "faction": "盐业派",
+      "population_wan": 85,
+      "geography": "潮汊盐田与疏浚码头",
+      "x": 243,
+      "y": 672,
+      "mark": "H05·02",
+      "country": "索弥共和国",
+      "country_code": "H05"
+    },
+    {
+      "code": "H05-03",
+      "name": "长桥州",
+      "capital": "长桥城",
+      "official_title": "州执事",
+      "official_name": "鲁赫·安娜",
+      "faction": "乡席扩增派",
+      "population_wan": 100,
+      "geography": "桥道粮地和农具工坊",
+      "x": 177,
+      "y": 729,
+      "mark": "H05·03",
+      "country": "索弥共和国",
+      "country_code": "H05"
+    },
+    {
+      "code": "H05-04",
+      "name": "苇门州",
+      "capital": "苇门",
+      "official_title": "州执事",
+      "official_name": "芮达·赛温",
+      "faction": "行会旧席派",
+      "population_wan": 90,
+      "geography": "南岸织造城镇",
+      "x": 255,
+      "y": 726,
+      "mark": "H05·04",
+      "country": "索弥共和国",
+      "country_code": "H05"
+    },
+    {
+      "code": "H05-05",
+      "name": "外沙州",
+      "capital": "外沙港",
+      "official_title": "州执事",
+      "official_name": "图玛·埃米",
+      "faction": "港户派",
+      "population_wan": 70,
+      "geography": "外海沙洲和海堤",
+      "x": 216,
+      "y": 765,
+      "mark": "H05·05",
+      "country": "索弥共和国",
+      "country_code": "H05"
+    },
+    {
+      "code": "H06-01",
+      "name": "堡畿领",
+      "capital": "维萨堡",
+      "official_title": "领务长",
+      "official_name": "维萨·托兰",
+      "faction": "侯廷维约派",
+      "population_wan": 55,
+      "geography": "侯堡、葡萄坡与军屯",
+      "x": 372,
+      "y": 774,
+      "mark": "H06·01",
+      "country": "卡雷侯领",
+      "country_code": "H06"
+    },
+    {
+      "code": "H06-02",
+      "name": "绿汀领",
+      "capital": "绿汀",
+      "official_title": "领务长",
+      "official_name": "伊萨·莫恩",
+      "faction": "地租保额派",
+      "population_wan": 50,
+      "geography": "南湖湿地和稻田",
+      "x": 423,
+      "y": 762,
+      "mark": "H06·02",
+      "country": "卡雷侯领",
+      "country_code": "H06"
+    },
+    {
+      "code": "H06-03",
+      "name": "燧湾市领",
+      "capital": "燧湾",
+      "official_title": "市领长",
+      "official_name": "鲁莎·梅尼",
+      "faction": "特许市派",
+      "population_wan": 48,
+      "geography": "南海港与染坊",
+      "x": 357,
+      "y": 819,
+      "mark": "H06·03",
+      "country": "卡雷侯领",
+      "country_code": "H06"
+    },
+    {
+      "code": "H06-04",
+      "name": "石萄领",
+      "capital": "石萄镇",
+      "official_title": "领务长",
+      "official_name": "阿蒂·芬兰",
+      "faction": "小地主派",
+      "population_wan": 42,
+      "geography": "丘陵葡萄园和石材",
+      "x": 435,
+      "y": 816,
+      "mark": "H06·04",
+      "country": "卡雷侯领",
+      "country_code": "H06"
+    },
+    {
+      "code": "H06-05",
+      "name": "东洼领",
+      "capital": "东洼",
+      "official_title": "领务长",
+      "official_name": "赫南·伊楚",
+      "faction": "佃约调停派",
+      "population_wan": 35,
+      "geography": "边界洼地与跨国佃田",
+      "x": 405,
+      "y": 846,
+      "mark": "H06·05",
+      "country": "卡雷侯领",
+      "country_code": "H06"
+    },
+    {
+      "code": "H07-01",
+      "name": "合流渠区",
+      "capital": "合流",
+      "official_title": "渠区议正",
+      "official_name": "邵季和",
+      "faction": "联渠均衡派",
+      "population_wan": 180,
+      "geography": "两支河汇流与全国官署",
+      "x": 621,
+      "y": 585,
+      "mark": "H07·01",
+      "country": "元溪合渠国",
+      "country_code": "H07"
+    },
+    {
+      "code": "H07-02",
+      "name": "北堰渠区",
+      "capital": "北堰",
+      "official_title": "渠区议正",
+      "official_name": "厉伯均",
+      "faction": "上堰保额派",
+      "population_wan": 150,
+      "geography": "山前总堰和纸坊",
+      "x": 675,
+      "y": 573,
+      "mark": "H07·02",
+      "country": "元溪合渠国",
+      "country_code": "H07"
+    },
+    {
+      "code": "H07-03",
+      "name": "青畦渠区",
+      "capital": "青畦",
+      "official_title": "渠区议正",
+      "official_name": "蒋知禾",
+      "faction": "小田均水派",
+      "population_wan": 155,
+      "geography": "中央水田与蚕桑",
+      "x": 606,
+      "y": 627,
+      "mark": "H07·03",
+      "country": "元溪合渠国",
+      "country_code": "H07"
+    },
+    {
+      "code": "H07-04",
+      "name": "蒲湾渠区",
+      "capital": "蒲湾城",
+      "official_title": "渠区议正",
+      "official_name": "蒲阿蓉",
+      "faction": "湖村共役派",
+      "population_wan": 145,
+      "geography": "西南湖汊和芦赫混居",
+      "x": 684,
+      "y": 624,
+      "mark": "H07·04",
+      "country": "元溪合渠国",
+      "country_code": "H07"
+    },
+    {
+      "code": "H07-05",
+      "name": "东索渠区",
+      "capital": "东索",
+      "official_title": "渠区议正",
+      "official_name": "章维理",
+      "faction": "专业水工派",
+      "population_wan": 130,
+      "geography": "东部河谷和西宸接壤地",
+      "x": 654,
+      "y": 654,
+      "mark": "H07·05",
+      "country": "元溪合渠国",
+      "country_code": "H07"
+    },
+    {
+      "code": "H08-01",
+      "name": "契平社联",
+      "capital": "契平",
+      "official_title": "社联公署长",
+      "official_name": "任仲实",
+      "faction": "修约派",
+      "population_wan": 105,
+      "geography": "中央公署和粮棉工坊",
+      "x": 621,
+      "y": 774,
+      "mark": "H08·01",
+      "country": "百契公社联邦",
+      "country_code": "H08"
+    },
+    {
+      "code": "H08-02",
+      "name": "桑陌社联",
+      "capital": "桑陌",
+      "official_title": "社联公署长",
+      "official_name": "乔绿婉",
+      "faction": "妇户资格派",
+      "population_wan": 90,
+      "geography": "桑园与织工村社",
+      "x": 675,
+      "y": 762,
+      "mark": "H08·02",
+      "country": "百契公社联邦",
+      "country_code": "H08"
+    },
+    {
+      "code": "H08-03",
+      "name": "石渠社联",
+      "capital": "石渠",
+      "official_title": "社联公署长",
+      "official_name": "石守方",
+      "faction": "古约保留派",
+      "population_wan": 80,
+      "geography": "东部石渠与传统粮社",
+      "x": 606,
+      "y": 819,
+      "mark": "H08·03",
+      "country": "百契公社联邦",
+      "country_code": "H08"
+    },
+    {
+      "code": "H08-04",
+      "name": "谷风社联",
+      "capital": "谷风",
+      "official_title": "社联公署长",
+      "official_name": "祝良平",
+      "faction": "外雇纳社派",
+      "population_wan": 85,
+      "geography": "南部旱田与移民新村",
+      "x": 684,
+      "y": 816,
+      "mark": "H08·04",
+      "country": "百契公社联邦",
+      "country_code": "H08"
+    },
+    {
+      "code": "H08-05",
+      "name": "连浦社联",
+      "capital": "连浦",
+      "official_title": "社联公署长",
+      "official_name": "梅玉生",
+      "faction": "市社采购派",
+      "population_wan": 70,
+      "geography": "西侧河港和市场社",
+      "x": 654,
+      "y": 846,
+      "mark": "H08·05",
+      "country": "百契公社联邦",
+      "country_code": "H08"
+    },
+    {
+      "code": "H09-01",
+      "name": "文昌府",
+      "capital": "文昌",
+      "official_title": "府尹",
+      "official_name": "许静宜",
+      "faction": "王廷官学派",
+      "population_wan": 145,
+      "geography": "都城、官学与印书街",
+      "x": 888,
+      "y": 759,
+      "mark": "H09·01",
+      "country": "荻文王国",
+      "country_code": "H09"
+    },
+    {
+      "code": "H09-02",
+      "name": "荻北府",
+      "capital": "北庠",
+      "official_title": "府尹",
+      "official_name": "荻承岳",
+      "faction": "宗室守额派",
+      "population_wan": 100,
+      "geography": "北部台地和宗室庄园",
+      "x": 939,
+      "y": 747,
+      "mark": "H09·02",
+      "country": "荻文王国",
+      "country_code": "H09"
+    },
+    {
+      "code": "H09-03",
+      "name": "南砚府",
+      "capital": "南砚",
+      "official_title": "府尹",
+      "official_name": "曹文砚",
+      "faction": "经师派",
+      "population_wan": 115,
+      "geography": "南河纸墨业和学田",
+      "x": 873,
+      "y": 804,
+      "mark": "H09·03",
+      "country": "荻文王国",
+      "country_code": "H09"
+    },
+    {
+      "code": "H09-04",
+      "name": "澜田府",
+      "capital": "澜田",
+      "official_title": "府尹",
+      "official_name": "柳毓青",
+      "faction": "实学派",
+      "population_wan": 110,
+      "geography": "西部稻麦轮作和农学",
+      "x": 951,
+      "y": 801,
+      "mark": "H09·04",
+      "country": "荻文王国",
+      "country_code": "H09"
+    },
+    {
+      "code": "H09-05",
+      "name": "东泽府",
+      "capital": "泽口",
+      "official_title": "府尹",
+      "official_name": "罗宜舟",
+      "faction": "港务派",
+      "population_wan": 90,
+      "geography": "东南河口和船粮仓",
+      "x": 921,
+      "y": 831,
+      "mark": "H09·05",
+      "country": "荻文王国",
+      "country_code": "H09"
+    },
+    {
+      "code": "H10-01",
+      "name": "景京府",
+      "capital": "景京",
+      "official_title": "府尹",
+      "official_name": "沈廷裕",
+      "faction": "廷制修补派",
+      "population_wan": 245,
+      "geography": "旧朝西廷与新王都",
+      "x": 921,
+      "y": 420,
+      "mark": "H10·01",
+      "country": "景廷王国",
+      "country_code": "H10"
+    },
+    {
+      "code": "H10-02",
+      "name": "望川省",
+      "capital": "望川",
+      "official_title": "省监",
+      "official_name": "霍仲谨",
+      "faction": "税册保额派",
+      "population_wan": 200,
+      "geography": "北部旧驿和瓜凉混居",
+      "x": 975,
+      "y": 408,
+      "mark": "H10·02",
+      "country": "景廷王国",
+      "country_code": "H10"
+    },
+    {
+      "code": "H10-03",
+      "name": "仪陆省",
+      "capital": "仪陆",
+      "official_title": "省监",
+      "official_name": "蒋仪成",
+      "faction": "礼学派",
+      "population_wan": 175,
+      "geography": "内陆旱田与宗庙",
+      "x": 906,
+      "y": 462,
+      "mark": "H10·03",
+      "country": "景廷王国",
+      "country_code": "H10"
+    },
+    {
+      "code": "H10-04",
+      "name": "青门省",
+      "capital": "青门",
+      "official_title": "省监",
+      "official_name": "苏澄礼",
+      "faction": "港仓务派",
+      "population_wan": 165,
+      "geography": "镜门海北段港口",
+      "x": 984,
+      "y": 459,
+      "mark": "H10·04",
+      "country": "景廷王国",
+      "country_code": "H10"
+    },
+    {
+      "code": "H10-05",
+      "name": "南屏省",
+      "capital": "南屏",
+      "official_title": "省监",
+      "official_name": "叶维素",
+      "faction": "议税派",
+      "population_wan": 135,
+      "geography": "南部关隘与西宸边界",
+      "x": 954,
+      "y": 489,
+      "mark": "H10·05",
+      "country": "景廷王国",
+      "country_code": "H10"
+    },
+    {
+      "code": "H11-01",
+      "name": "联津省",
+      "capital": "联津",
+      "official_title": "省执政",
+      "official_name": "唐宜修",
+      "faction": "债务统筹派",
+      "population_wan": 160,
+      "geography": "中央会院、银市和跨海港",
+      "x": 1050,
+      "y": 645,
+      "mark": "H11·01",
+      "country": "西宸联省",
+      "country_code": "H11"
+    },
+    {
+      "code": "H11-02",
+      "name": "旧仓省",
+      "capital": "旧仓",
+      "official_title": "省执政",
+      "official_name": "俞南颂",
+      "faction": "仓役减免派",
+      "population_wan": 125,
+      "geography": "北部旧粮仓和农田",
+      "x": 1104,
+      "y": 633,
+      "mark": "H11·02",
+      "country": "西宸联省",
+      "country_code": "H11"
+    },
+    {
+      "code": "H11-03",
+      "name": "广济省",
+      "capital": "广济",
+      "official_title": "省执政",
+      "official_name": "董明珂",
+      "faction": "港货派",
+      "population_wan": 125,
+      "geography": "海岸造船和盐业",
+      "x": 1035,
+      "y": 687,
+      "mark": "H11·03",
+      "country": "西宸联省",
+      "country_code": "H11"
+    },
+    {
+      "code": "H11-04",
+      "name": "安越省",
+      "capital": "安越",
+      "official_title": "省执政",
+      "official_name": "颜若存",
+      "faction": "地方税权派",
+      "population_wan": 105,
+      "geography": "西部山谷和元溪居民",
+      "x": 1113,
+      "y": 684,
+      "mark": "H11·04",
+      "country": "西宸联省",
+      "country_code": "H11"
+    },
+    {
+      "code": "H11-05",
+      "name": "南泽省",
+      "capital": "南泽",
+      "official_title": "省执政",
+      "official_name": "陆知葵",
+      "faction": "乡役均摊派",
+      "population_wan": 95,
+      "geography": "南海岸和荻文边境",
+      "x": 1083,
+      "y": 714,
+      "mark": "H11·05",
+      "country": "西宸联省",
+      "country_code": "H11"
+    },
+    {
+      "code": "H12-01",
+      "name": "纽帆港盟",
+      "capital": "纽帆",
+      "official_title": "港盟召集人",
+      "official_name": "纳赫·阿伊",
+      "faction": "共舰派",
+      "population_wan": 85,
+      "geography": "近岸主港岛、船材仓与中央盟会",
+      "x": 996,
+      "y": 114,
+      "mark": "H12·01",
+      "country": "北斗海盟",
+      "country_code": "H12"
+    },
+    {
+      "code": "H12-02",
+      "name": "星沙岛盟",
+      "capital": "星沙",
+      "official_title": "岛盟召集人",
+      "official_name": "艾萨·汀罗",
+      "faction": "岛自治派",
+      "population_wan": 45,
+      "geography": "东北浅海群岛",
+      "x": 1089,
+      "y": 117,
+      "mark": "H12·02",
+      "country": "北斗海盟",
+      "country_code": "H12"
+    },
+    {
+      "code": "H12-03",
+      "name": "长潮岸盟",
+      "capital": "长潮",
+      "official_title": "岸盟召集人",
+      "official_name": "苏玛·依伦",
+      "faction": "渔户派",
+      "population_wan": 60,
+      "geography": "大陆较小东岸带、渔盐地",
+      "x": 1032,
+      "y": 237,
+      "mark": "H12·03",
+      "country": "北斗海盟",
+      "country_code": "H12"
+    },
+    {
+      "code": "H12-04",
+      "name": "双灯港盟",
+      "capital": "双灯",
+      "official_title": "港盟召集人",
+      "official_name": "梅洛·卡娜",
+      "faction": "外商互保派",
+      "population_wan": 55,
+      "geography": "东侧中岛两港",
+      "x": 1125,
+      "y": 210,
+      "mark": "H12·04",
+      "country": "北斗海盟",
+      "country_code": "H12"
+    },
+    {
+      "code": "H12-05",
+      "name": "雾舟岛盟",
+      "capital": "雾舟",
+      "official_title": "岛盟召集人",
+      "official_name": "塔维·欧赛",
+      "faction": "独航派",
+      "population_wan": 45,
+      "geography": "外海东岛、深水远航船队",
+      "x": 1221,
+      "y": 249,
+      "mark": "H12·05",
+      "country": "北斗海盟",
+      "country_code": "H12"
+    }
+  ],
+  "national_boundaries": [
+    {
+      "pair": [
+        1,
+        10
+      ],
+      "points": [
+        [
+          819,
+          120
+        ],
+        [
+          816,
+          93
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        1,
+        10
+      ],
+      "points": [
+        [
+          819,
+          120
+        ],
+        [
+          843,
+          216
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        10,
+        12
+      ],
+      "points": [
+        [
+          1098,
+          135
+        ],
+        [
+          1077,
+          135
+        ],
+        [
+          1068,
+          126
+        ],
+        [
+          1068,
+          111
+        ],
+        [
+          1080,
+          102
+        ],
+        [
+          1101,
+          102
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        10,
+        12
+      ],
+      "points": [
+        [
+          1113,
+          306
+        ],
+        [
+          1083,
+          312
+        ],
+        [
+          1062,
+          303
+        ],
+        [
+          1044,
+          282
+        ],
+        [
+          1032,
+          249
+        ],
+        [
+          1032,
+          204
+        ],
+        [
+          1050,
+          162
+        ],
+        [
+          1083,
+          141
+        ],
+        [
+          1107,
+          144
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        10,
+        12
+      ],
+      "points": [
+        [
+          1113,
+          306
+        ],
+        [
+          1125,
+          297
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        10,
+        12
+      ],
+      "points": [
+        [
+          984,
+          102
+        ],
+        [
+          972,
+          111
+        ],
+        [
+          981,
+          132
+        ],
+        [
+          1005,
+          135
+        ],
+        [
+          1020,
+          123
+        ],
+        [
+          1014,
+          102
+        ],
+        [
+          984,
+          102
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        10,
+        12
+      ],
+      "points": [
+        [
+          1107,
+          135
+        ],
+        [
+          1098,
+          135
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "points": [
+        [
+          357,
+          153
+        ],
+        [
+          375,
+          258
+        ],
+        [
+          369,
+          396
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "points": [
+        [
+          351,
+          141
+        ],
+        [
+          348,
+          126
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "points": [
+        [
+          351,
+          141
+        ],
+        [
+          357,
+          153
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "points": [
+        [
+          810,
+          213
+        ],
+        [
+          753,
+          210
+        ],
+        [
+          663,
+          222
+        ],
+        [
+          627,
+          273
+        ],
+        [
+          459,
+          462
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "points": [
+        [
+          810,
+          213
+        ],
+        [
+          843,
+          216
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        2,
+        10
+      ],
+      "points": [
+        [
+          843,
+          222
+        ],
+        [
+          843,
+          216
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        2,
+        10
+      ],
+      "points": [
+        [
+          843,
+          222
+        ],
+        [
+          840,
+          297
+        ],
+        [
+          780,
+          429
+        ],
+        [
+          765,
+          486
+        ],
+        [
+          768,
+          510
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "points": [
+        [
+          285,
+          414
+        ],
+        [
+          171,
+          438
+        ],
+        [
+          105,
+          462
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "points": [
+        [
+          285,
+          414
+        ],
+        [
+          369,
+          396
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "points": [
+        [
+          450,
+          456
+        ],
+        [
+          408,
+          417
+        ],
+        [
+          369,
+          396
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "points": [
+        [
+          450,
+          456
+        ],
+        [
+          459,
+          462
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "points": [
+        [
+          477,
+          510
+        ],
+        [
+          480,
+          519
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "points": [
+        [
+          459,
+          465
+        ],
+        [
+          465,
+          495
+        ],
+        [
+          477,
+          510
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "points": [
+        [
+          1125,
+          480
+        ],
+        [
+          1044,
+          525
+        ],
+        [
+          954,
+          600
+        ],
+        [
+          930,
+          573
+        ],
+        [
+          897,
+          564
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "points": [
+        [
+          1125,
+          480
+        ],
+        [
+          1164,
+          462
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        2,
+        7
+      ],
+      "points": [
+        [
+          642,
+          492
+        ],
+        [
+          588,
+          495
+        ],
+        [
+          480,
+          519
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        2,
+        7
+      ],
+      "points": [
+        [
+          642,
+          492
+        ],
+        [
+          708,
+          495
+        ],
+        [
+          768,
+          510
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "points": [
+        [
+          279,
+          621
+        ],
+        [
+          357,
+          693
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "points": [
+        [
+          270,
+          618
+        ],
+        [
+          189,
+          576
+        ],
+        [
+          129,
+          513
+        ],
+        [
+          102,
+          495
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "points": [
+        [
+          270,
+          618
+        ],
+        [
+          279,
+          621
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        7,
+        10
+      ],
+      "points": [
+        [
+          774,
+          522
+        ],
+        [
+          768,
+          510
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        7,
+        10
+      ],
+      "points": [
+        [
+          774,
+          522
+        ],
+        [
+          837,
+          594
+        ],
+        [
+          855,
+          573
+        ],
+        [
+          897,
+          564
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        4,
+        7
+      ],
+      "points": [
+        [
+          483,
+          540
+        ],
+        [
+          504,
+          642
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        4,
+        7
+      ],
+      "points": [
+        [
+          480,
+          534
+        ],
+        [
+          480,
+          519
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        4,
+        7
+      ],
+      "points": [
+        [
+          480,
+          534
+        ],
+        [
+          483,
+          540
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        7,
+        11
+      ],
+      "points": [
+        [
+          891,
+          609
+        ],
+        [
+          897,
+          564
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        7,
+        11
+      ],
+      "points": [
+        [
+          891,
+          609
+        ],
+        [
+          888,
+          669
+        ],
+        [
+          894,
+          687
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        4,
+        6
+      ],
+      "points": [
+        [
+          399,
+          684
+        ],
+        [
+          357,
+          693
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        4,
+        6
+      ],
+      "points": [
+        [
+          399,
+          684
+        ],
+        [
+          459,
+          666
+        ],
+        [
+          504,
+          642
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "points": [
+        [
+          525,
+          669
+        ],
+        [
+          543,
+          705
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "points": [
+        [
+          510,
+          648
+        ],
+        [
+          504,
+          642
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "points": [
+        [
+          510,
+          648
+        ],
+        [
+          525,
+          669
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        9,
+        11
+      ],
+      "points": [
+        [
+          1026,
+          774
+        ],
+        [
+          1002,
+          693
+        ],
+        [
+          954,
+          645
+        ],
+        [
+          927,
+          678
+        ],
+        [
+          894,
+          687
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        9,
+        11
+      ],
+      "points": [
+        [
+          1026,
+          774
+        ],
+        [
+          1059,
+          828
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        7,
+        9
+      ],
+      "points": [
+        [
+          846,
+          666
+        ],
+        [
+          837,
+          654
+        ],
+        [
+          795,
+          708
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        7,
+        9
+      ],
+      "points": [
+        [
+          846,
+          666
+        ],
+        [
+          870,
+          684
+        ],
+        [
+          894,
+          687
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "points": [
+        [
+          327,
+          741
+        ],
+        [
+          357,
+          693
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "points": [
+        [
+          327,
+          741
+        ],
+        [
+          243,
+          849
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "points": [
+        [
+          681,
+          696
+        ],
+        [
+          543,
+          705
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "points": [
+        [
+          681,
+          696
+        ],
+        [
+          795,
+          708
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        6,
+        8
+      ],
+      "points": [
+        [
+          540,
+          708
+        ],
+        [
+          501,
+          825
+        ],
+        [
+          504,
+          897
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        6,
+        8
+      ],
+      "points": [
+        [
+          540,
+          708
+        ],
+        [
+          543,
+          705
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "points": [
+        [
+          777,
+          768
+        ],
+        [
+          759,
+          837
+        ],
+        [
+          768,
+          897
+        ]
+      ],
+      "country": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "points": [
+        [
+          777,
+          768
+        ],
+        [
+          795,
+          708
+        ]
+      ],
+      "country": true
+    }
+  ],
+  "district_boundaries": [
+    {
+      "pair": [
+        46,
+        47
+      ],
+      "points": [
+        [
+          942,
+          360
+        ],
+        [
+          891,
+          291
+        ],
+        [
+          891,
+          261
+        ],
+        [
+          912,
+          216
+        ],
+        [
+          909,
+          177
+        ],
+        [
+          849,
+          87
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        46,
+        47
+      ],
+      "points": [
+        [
+          942,
+          360
+        ],
+        [
+          972,
+          426
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "points": [
+        [
+          465,
+          126
+        ],
+        [
+          462,
+          120
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "points": [
+        [
+          465,
+          126
+        ],
+        [
+          492,
+          183
+        ],
+        [
+          489,
+          216
+        ],
+        [
+          465,
+          282
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "points": [
+        [
+          213,
+          294
+        ],
+        [
+          219,
+          264
+        ],
+        [
+          246,
+          210
+        ],
+        [
+          246,
+          174
+        ],
+        [
+          225,
+          147
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "points": [
+        [
+          213,
+          294
+        ],
+        [
+          216,
+          306
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        56,
+        57
+      ],
+      "points": [
+        [
+          1065,
+          162
+        ],
+        [
+          1065,
+          150
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        56,
+        57
+      ],
+      "points": [
+        [
+          1065,
+          162
+        ],
+        [
+          1062,
+          192
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        56,
+        58
+      ],
+      "points": [
+        [
+          1047,
+          186
+        ],
+        [
+          1059,
+          195
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        56,
+        58
+      ],
+      "points": [
+        [
+          1041,
+          186
+        ],
+        [
+          1047,
+          186
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        57,
+        59
+      ],
+      "points": [
+        [
+          1116,
+          183
+        ],
+        [
+          1062,
+          192
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        56,
+        59
+      ],
+      "points": [
+        [
+          1059,
+          195
+        ],
+        [
+          1062,
+          192
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        58,
+        59
+      ],
+      "points": [
+        [
+          1053,
+          210
+        ],
+        [
+          1035,
+          249
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        58,
+        59
+      ],
+      "points": [
+        [
+          1053,
+          210
+        ],
+        [
+          1059,
+          195
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "points": [
+        [
+          417,
+          240
+        ],
+        [
+          429,
+          267
+        ],
+        [
+          453,
+          291
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "points": [
+        [
+          405,
+          225
+        ],
+        [
+          417,
+          240
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "points": [
+        [
+          369,
+          204
+        ],
+        [
+          405,
+          225
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "points": [
+        [
+          507,
+          285
+        ],
+        [
+          465,
+          282
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "points": [
+        [
+          738,
+          213
+        ],
+        [
+          714,
+          204
+        ],
+        [
+          654,
+          207
+        ],
+        [
+          609,
+          231
+        ],
+        [
+          564,
+          270
+        ],
+        [
+          528,
+          285
+        ],
+        [
+          507,
+          285
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "points": [
+        [
+          837,
+          210
+        ],
+        [
+          834,
+          213
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "points": [
+        [
+          837,
+          210
+        ],
+        [
+          843,
+          210
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        12,
+        14
+      ],
+      "points": [
+        [
+          246,
+          297
+        ],
+        [
+          216,
+          306
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        12,
+        14
+      ],
+      "points": [
+        [
+          312,
+          261
+        ],
+        [
+          285,
+          282
+        ],
+        [
+          246,
+          297
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        12,
+        14
+      ],
+      "points": [
+        [
+          312,
+          261
+        ],
+        [
+          351,
+          237
+        ],
+        [
+          372,
+          234
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        11,
+        13
+      ],
+      "points": [
+        [
+          195,
+          309
+        ],
+        [
+          210,
+          315
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        11,
+        13
+      ],
+      "points": [
+        [
+          192,
+          306
+        ],
+        [
+          195,
+          309
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        11,
+        13
+      ],
+      "points": [
+        [
+          129,
+          261
+        ],
+        [
+          162,
+          291
+        ],
+        [
+          192,
+          306
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "points": [
+        [
+          456,
+          288
+        ],
+        [
+          465,
+          282
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "points": [
+        [
+          447,
+          300
+        ],
+        [
+          423,
+          339
+        ],
+        [
+          423,
+          369
+        ],
+        [
+          435,
+          396
+        ],
+        [
+          426,
+          432
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "points": [
+        [
+          447,
+          300
+        ],
+        [
+          453,
+          291
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "points": [
+        [
+          504,
+          327
+        ],
+        [
+          474,
+          312
+        ],
+        [
+          456,
+          291
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "points": [
+        [
+          504,
+          327
+        ],
+        [
+          552,
+          354
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "points": [
+        [
+          627,
+          342
+        ],
+        [
+          672,
+          375
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "points": [
+        [
+          609,
+          324
+        ],
+        [
+          600,
+          303
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "points": [
+        [
+          609,
+          324
+        ],
+        [
+          627,
+          342
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        11,
+        14
+      ],
+      "points": [
+        [
+          213,
+          309
+        ],
+        [
+          210,
+          315
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        11,
+        14
+      ],
+      "points": [
+        [
+          213,
+          309
+        ],
+        [
+          216,
+          306
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        13,
+        15
+      ],
+      "points": [
+        [
+          192,
+          414
+        ],
+        [
+          180,
+          438
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        13,
+        15
+      ],
+      "points": [
+        [
+          195,
+          354
+        ],
+        [
+          192,
+          414
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        13,
+        15
+      ],
+      "points": [
+        [
+          198,
+          342
+        ],
+        [
+          210,
+          318
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        13,
+        15
+      ],
+      "points": [
+        [
+          198,
+          342
+        ],
+        [
+          195,
+          354
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "points": [
+        [
+          258,
+          342
+        ],
+        [
+          210,
+          318
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "points": [
+        [
+          258,
+          342
+        ],
+        [
+          318,
+          351
+        ],
+        [
+          369,
+          384
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        6,
+        9
+      ],
+      "points": [
+        [
+          672,
+          375
+        ],
+        [
+          672,
+          393
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        7,
+        9
+      ],
+      "points": [
+        [
+          759,
+          387
+        ],
+        [
+          672,
+          375
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        7,
+        9
+      ],
+      "points": [
+        [
+          759,
+          387
+        ],
+        [
+          798,
+          393
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        6,
+        8
+      ],
+      "points": [
+        [
+          663,
+          390
+        ],
+        [
+          543,
+          393
+        ],
+        [
+          525,
+          387
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        6,
+        8
+      ],
+      "points": [
+        [
+          663,
+          390
+        ],
+        [
+          672,
+          393
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        8,
+        10
+      ],
+      "points": [
+        [
+          645,
+          450
+        ],
+        [
+          600,
+          495
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        8,
+        10
+      ],
+      "points": [
+        [
+          645,
+          450
+        ],
+        [
+          669,
+          420
+        ],
+        [
+          672,
+          393
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "points": [
+        [
+          696,
+          441
+        ],
+        [
+          693,
+          420
+        ],
+        [
+          672,
+          393
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "points": [
+        [
+          696,
+          441
+        ],
+        [
+          720,
+          498
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "points": [
+        [
+          324,
+          444
+        ],
+        [
+          306,
+          495
+        ],
+        [
+          303,
+          531
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "points": [
+        [
+          327,
+          438
+        ],
+        [
+          327,
+          405
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "points": [
+        [
+          327,
+          438
+        ],
+        [
+          324,
+          444
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        47,
+        49
+      ],
+      "points": [
+        [
+          1152,
+          420
+        ],
+        [
+          1104,
+          444
+        ],
+        [
+          1056,
+          444
+        ],
+        [
+          999,
+          426
+        ],
+        [
+          972,
+          426
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        47,
+        49
+      ],
+      "points": [
+        [
+          1152,
+          420
+        ],
+        [
+          1161,
+          414
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        46,
+        48
+      ],
+      "points": [
+        [
+          921,
+          432
+        ],
+        [
+          960,
+          441
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        46,
+        48
+      ],
+      "points": [
+        [
+          792,
+          417
+        ],
+        [
+          837,
+          435
+        ],
+        [
+          921,
+          432
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        46,
+        49
+      ],
+      "points": [
+        [
+          966,
+          432
+        ],
+        [
+          960,
+          441
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        46,
+        49
+      ],
+      "points": [
+        [
+          972,
+          426
+        ],
+        [
+          966,
+          432
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        48,
+        50
+      ],
+      "points": [
+        [
+          921,
+          477
+        ],
+        [
+          870,
+          528
+        ],
+        [
+          861,
+          570
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        48,
+        50
+      ],
+      "points": [
+        [
+          927,
+          471
+        ],
+        [
+          921,
+          477
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        48,
+        50
+      ],
+      "points": [
+        [
+          936,
+          462
+        ],
+        [
+          927,
+          471
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        48,
+        50
+      ],
+      "points": [
+        [
+          939,
+          462
+        ],
+        [
+          960,
+          444
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        49,
+        50
+      ],
+      "points": [
+        [
+          969,
+          453
+        ],
+        [
+          960,
+          444
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        49,
+        50
+      ],
+      "points": [
+        [
+          969,
+          453
+        ],
+        [
+          1005,
+          495
+        ],
+        [
+          1026,
+          540
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        18
+      ],
+      "points": [
+        [
+          246,
+          549
+        ],
+        [
+          297,
+          552
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        18
+      ],
+      "points": [
+        [
+          186,
+          522
+        ],
+        [
+          213,
+          540
+        ],
+        [
+          246,
+          549
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        18
+      ],
+      "points": [
+        [
+          165,
+          513
+        ],
+        [
+          105,
+          477
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        18
+      ],
+      "points": [
+        [
+          165,
+          513
+        ],
+        [
+          186,
+          522
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        31,
+        32
+      ],
+      "points": [
+        [
+          630,
+          567
+        ],
+        [
+          645,
+          594
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        31,
+        32
+      ],
+      "points": [
+        [
+          624,
+          516
+        ],
+        [
+          630,
+          492
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        31,
+        32
+      ],
+      "points": [
+        [
+          624,
+          516
+        ],
+        [
+          621,
+          537
+        ],
+        [
+          630,
+          567
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        17,
+        19
+      ],
+      "points": [
+        [
+          393,
+          507
+        ],
+        [
+          480,
+          519
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        17,
+        19
+      ],
+      "points": [
+        [
+          387,
+          507
+        ],
+        [
+          345,
+          513
+        ],
+        [
+          303,
+          531
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        17,
+        19
+      ],
+      "points": [
+        [
+          387,
+          507
+        ],
+        [
+          393,
+          507
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        19
+      ],
+      "points": [
+        [
+          300,
+          540
+        ],
+        [
+          303,
+          531
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        16,
+        19
+      ],
+      "points": [
+        [
+          300,
+          540
+        ],
+        [
+          297,
+          552
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        51,
+        52
+      ],
+      "points": [
+        [
+          1059,
+          600
+        ],
+        [
+          1104,
+          642
+        ],
+        [
+          1110,
+          678
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        51,
+        52
+      ],
+      "points": [
+        [
+          1047,
+          585
+        ],
+        [
+          1059,
+          600
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        51,
+        52
+      ],
+      "points": [
+        [
+          1044,
+          585
+        ],
+        [
+          1029,
+          540
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        18,
+        20
+      ],
+      "points": [
+        [
+          312,
+          615
+        ],
+        [
+          297,
+          552
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        18,
+        20
+      ],
+      "points": [
+        [
+          312,
+          615
+        ],
+        [
+          309,
+          642
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "points": [
+        [
+          426,
+          639
+        ],
+        [
+          363,
+          576
+        ],
+        [
+          297,
+          552
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "points": [
+        [
+          426,
+          639
+        ],
+        [
+          459,
+          663
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "points": [
+        [
+          228,
+          699
+        ],
+        [
+          231,
+          678
+        ],
+        [
+          222,
+          648
+        ],
+        [
+          177,
+          567
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "points": [
+        [
+          228,
+          699
+        ],
+        [
+          222,
+          720
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        32,
+        34
+      ],
+      "points": [
+        [
+          732,
+          594
+        ],
+        [
+          696,
+          579
+        ],
+        [
+          672,
+          579
+        ],
+        [
+          645,
+          594
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        32,
+        34
+      ],
+      "points": [
+        [
+          732,
+          594
+        ],
+        [
+          771,
+          606
+        ],
+        [
+          801,
+          606
+        ],
+        [
+          837,
+          591
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        31,
+        34
+      ],
+      "points": [
+        [
+          645,
+          594
+        ],
+        [
+          645,
+          609
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        31,
+        33
+      ],
+      "points": [
+        [
+          558,
+          609
+        ],
+        [
+          495,
+          597
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        31,
+        33
+      ],
+      "points": [
+        [
+          558,
+          609
+        ],
+        [
+          645,
+          609
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        33,
+        35
+      ],
+      "points": [
+        [
+          642,
+          642
+        ],
+        [
+          645,
+          609
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        33,
+        35
+      ],
+      "points": [
+        [
+          642,
+          642
+        ],
+        [
+          600,
+          699
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        34,
+        35
+      ],
+      "points": [
+        [
+          702,
+          639
+        ],
+        [
+          645,
+          609
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        34,
+        35
+      ],
+      "points": [
+        [
+          702,
+          639
+        ],
+        [
+          732,
+          663
+        ],
+        [
+          744,
+          699
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        51,
+        53
+      ],
+      "points": [
+        [
+          1059,
+          669
+        ],
+        [
+          954,
+          621
+        ],
+        [
+          888,
+          621
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        51,
+        53
+      ],
+      "points": [
+        [
+          1059,
+          669
+        ],
+        [
+          1098,
+          687
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        23
+      ],
+      "points": [
+        [
+          114,
+          660
+        ],
+        [
+          153,
+          684
+        ],
+        [
+          201,
+          735
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        23
+      ],
+      "points": [
+        [
+          108,
+          657
+        ],
+        [
+          114,
+          660
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        23
+      ],
+      "points": [
+        [
+          99,
+          654
+        ],
+        [
+          93,
+          654
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        23
+      ],
+      "points": [
+        [
+          99,
+          654
+        ],
+        [
+          108,
+          657
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        52,
+        54
+      ],
+      "points": [
+        [
+          1110,
+          678
+        ],
+        [
+          1152,
+          666
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        22,
+        24
+      ],
+      "points": [
+        [
+          291,
+          690
+        ],
+        [
+          249,
+          714
+        ],
+        [
+          222,
+          720
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        22,
+        24
+      ],
+      "points": [
+        [
+          315,
+          678
+        ],
+        [
+          291,
+          690
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        22,
+        24
+      ],
+      "points": [
+        [
+          315,
+          678
+        ],
+        [
+          336,
+          672
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        41,
+        42
+      ],
+      "points": [
+        [
+          909,
+          720
+        ],
+        [
+          924,
+          678
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        41,
+        42
+      ],
+      "points": [
+        [
+          909,
+          720
+        ],
+        [
+          891,
+          756
+        ],
+        [
+          891,
+          786
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        51,
+        54
+      ],
+      "points": [
+        [
+          1101,
+          684
+        ],
+        [
+          1098,
+          687
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        51,
+        54
+      ],
+      "points": [
+        [
+          1101,
+          684
+        ],
+        [
+          1110,
+          678
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "points": [
+        [
+          378,
+          780
+        ],
+        [
+          372,
+          747
+        ],
+        [
+          393,
+          687
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "points": [
+        [
+          378,
+          780
+        ],
+        [
+          381,
+          783
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        53,
+        55
+      ],
+      "points": [
+        [
+          1035,
+          738
+        ],
+        [
+          1020,
+          753
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        53,
+        55
+      ],
+      "points": [
+        [
+          1095,
+          690
+        ],
+        [
+          1035,
+          738
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        54,
+        55
+      ],
+      "points": [
+        [
+          1104,
+          717
+        ],
+        [
+          1098,
+          690
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        54,
+        55
+      ],
+      "points": [
+        [
+          1104,
+          717
+        ],
+        [
+          1104,
+          762
+        ],
+        [
+          1125,
+          783
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        36,
+        37
+      ],
+      "points": [
+        [
+          651,
+          705
+        ],
+        [
+          636,
+          744
+        ],
+        [
+          639,
+          786
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        36,
+        37
+      ],
+      "points": [
+        [
+          654,
+          696
+        ],
+        [
+          651,
+          705
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        24
+      ],
+      "points": [
+        [
+          210,
+          729
+        ],
+        [
+          201,
+          735
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        24
+      ],
+      "points": [
+        [
+          213,
+          726
+        ],
+        [
+          210,
+          729
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        21,
+        24
+      ],
+      "points": [
+        [
+          222,
+          720
+        ],
+        [
+          213,
+          726
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        23,
+        25
+      ],
+      "points": [
+        [
+          153,
+          786
+        ],
+        [
+          201,
+          738
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "points": [
+        [
+          267,
+          801
+        ],
+        [
+          273,
+          804
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "points": [
+        [
+          231,
+          777
+        ],
+        [
+          267,
+          801
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "points": [
+        [
+          216,
+          765
+        ],
+        [
+          201,
+          738
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "points": [
+        [
+          216,
+          765
+        ],
+        [
+          231,
+          777
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        42,
+        44
+      ],
+      "points": [
+        [
+          936,
+          759
+        ],
+        [
+          891,
+          786
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        42,
+        44
+      ],
+      "points": [
+        [
+          936,
+          759
+        ],
+        [
+          966,
+          750
+        ],
+        [
+          1023,
+          759
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        37,
+        39
+      ],
+      "points": [
+        [
+          654,
+          780
+        ],
+        [
+          639,
+          786
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        37,
+        39
+      ],
+      "points": [
+        [
+          654,
+          780
+        ],
+        [
+          711,
+          774
+        ],
+        [
+          771,
+          789
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        41,
+        43
+      ],
+      "points": [
+        [
+          882,
+          798
+        ],
+        [
+          828,
+          798
+        ],
+        [
+          774,
+          780
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        26,
+        29
+      ],
+      "points": [
+        [
+          378,
+          786
+        ],
+        [
+          375,
+          795
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        26,
+        29
+      ],
+      "points": [
+        [
+          378,
+          786
+        ],
+        [
+          381,
+          783
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        27,
+        29
+      ],
+      "points": [
+        [
+          405,
+          786
+        ],
+        [
+          381,
+          783
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        27,
+        29
+      ],
+      "points": [
+        [
+          405,
+          786
+        ],
+        [
+          510,
+          795
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        36,
+        39
+      ],
+      "points": [
+        [
+          633,
+          795
+        ],
+        [
+          639,
+          786
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        41,
+        44
+      ],
+      "points": [
+        [
+          891,
+          786
+        ],
+        [
+          888,
+          798
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        26,
+        28
+      ],
+      "points": [
+        [
+          297,
+          792
+        ],
+        [
+          285,
+          792
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        26,
+        28
+      ],
+      "points": [
+        [
+          297,
+          792
+        ],
+        [
+          375,
+          795
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        28,
+        30
+      ],
+      "points": [
+        [
+          372,
+          855
+        ],
+        [
+          375,
+          795
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        28,
+        30
+      ],
+      "points": [
+        [
+          372,
+          855
+        ],
+        [
+          366,
+          894
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "points": [
+        [
+          414,
+          819
+        ],
+        [
+          375,
+          795
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "points": [
+        [
+          414,
+          819
+        ],
+        [
+          444,
+          840
+        ],
+        [
+          495,
+          900
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        36,
+        38
+      ],
+      "points": [
+        [
+          579,
+          801
+        ],
+        [
+          510,
+          801
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        36,
+        38
+      ],
+      "points": [
+        [
+          579,
+          801
+        ],
+        [
+          633,
+          798
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        43,
+        45
+      ],
+      "points": [
+        [
+          879,
+          849
+        ],
+        [
+          885,
+          798
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        43,
+        45
+      ],
+      "points": [
+        [
+          879,
+          849
+        ],
+        [
+          876,
+          891
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        44,
+        45
+      ],
+      "points": [
+        [
+          933,
+          813
+        ],
+        [
+          978,
+          828
+        ],
+        [
+          1008,
+          855
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        44,
+        45
+      ],
+      "points": [
+        [
+          906,
+          807
+        ],
+        [
+          888,
+          798
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        44,
+        45
+      ],
+      "points": [
+        [
+          906,
+          807
+        ],
+        [
+          933,
+          813
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        38,
+        40
+      ],
+      "points": [
+        [
+          624,
+          840
+        ],
+        [
+          633,
+          801
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        38,
+        40
+      ],
+      "points": [
+        [
+          624,
+          840
+        ],
+        [
+          615,
+          891
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        39,
+        40
+      ],
+      "points": [
+        [
+          675,
+          825
+        ],
+        [
+          738,
+          864
+        ],
+        [
+          762,
+          897
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        39,
+        40
+      ],
+      "points": [
+        [
+          648,
+          807
+        ],
+        [
+          675,
+          825
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        39,
+        40
+      ],
+      "points": [
+        [
+          633,
+          801
+        ],
+        [
+          648,
+          807
+        ]
+      ],
+      "country": false
+    }
+  ],
+  "land_paths": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "points": [
+        [
+          1140,
+          531
+        ],
+        [
+          1152,
+          669
+        ],
+        [
+          1122,
+          801
+        ],
+        [
+          966,
+          876
+        ],
+        [
+          816,
+          903
+        ],
+        [
+          702,
+          888
+        ],
+        [
+          630,
+          888
+        ],
+        [
+          399,
+          909
+        ],
+        [
+          183,
+          825
+        ],
+        [
+          108,
+          726
+        ],
+        [
+          78,
+          582
+        ],
+        [
+          105,
+          477
+        ],
+        [
+          135,
+          192
+        ],
+        [
+          237,
+          138
+        ],
+        [
+          396,
+          120
+        ],
+        [
+          582,
+          117
+        ],
+        [
+          765,
+          102
+        ],
+        [
+          960,
+          66
+        ],
+        [
+          1101,
+          99
+        ],
+        [
+          1116,
+          114
+        ],
+        [
+          1116,
+          126
+        ],
+        [
+          1107,
+          132
+        ],
+        [
+          1116,
+          195
+        ],
+        [
+          1140,
+          195
+        ],
+        [
+          1149,
+          204
+        ],
+        [
+          1149,
+          219
+        ],
+        [
+          1140,
+          228
+        ],
+        [
+          1122,
+          228
+        ],
+        [
+          1128,
+          348
+        ],
+        [
+          1173,
+          432
+        ],
+        [
+          1140,
+          531
+        ]
+      ],
+      "country": false
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "points": [
+        [
+          1218,
+          270
+        ],
+        [
+          1197,
+          258
+        ],
+        [
+          1197,
+          246
+        ],
+        [
+          1212,
+          234
+        ],
+        [
+          1239,
+          237
+        ],
+        [
+          1245,
+          258
+        ],
+        [
+          1218,
+          270
+        ]
+      ],
+      "country": false
+    }
+  ],
+  "background": "D:\\dreaming\\西湾盛洲志\\01·图册\\源文件\\洄原·生图底画.png",
+  "note": "艺术地形由imagegen绘制；SVG区号文字和国界区界为独立核对图层；北向上，非测绘投影"
+}
