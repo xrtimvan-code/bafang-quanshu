@@ -20,6 +20,15 @@ def txt(x,y,text,size=12,color='#303c39',anchor='middle',spacing=0,halo=1.5):
 
 def path(points,closed=False):return m.smoothpath(points,closed)
 
+def water_path(points):
+    # Pass through confluence nodes; the boundary smoother rounds past its vertices.
+    out=f'M {points[0][0]:.2f},{points[0][1]:.2f}'
+    for i in range(len(points)-1):
+        p0=np.array(points[max(i-1,0)]);p1=np.array(points[i]);p2=np.array(points[i+1]);p3=np.array(points[min(i+2,len(points)-1)])
+        a=p1+.12*(p2-p0);b=p2-.12*(p3-p1)
+        out+=f' C {a[0]:.2f},{a[1]:.2f} {b[0]:.2f},{b[1]:.2f} {p2[0]:.2f},{p2[1]:.2f}'
+    return out
+
 def components(mask):
     labels=np.zeros(mask.shape,np.int32);regions=[];h,w=mask.shape
     for yy,xx in zip(*np.where(mask)):
@@ -37,7 +46,45 @@ def allpaths(mask):
 
 def joined(ps):return ' '.join(path(p['points'],True) for p in ps if len(p['points'])>3)
 
-def relative_relief(k,f,body,labs,parts):
+def island_form(k,yy,xx):
+    cx,cy=float(np.mean(xx)*STEP),float(np.mean(yy)*STEP)
+    points=np.column_stack((xx*STEP-cx,yy*STEP-cy))
+    _,vectors=np.linalg.eigh(points.T@points/max(len(xx),1));axis=vectors[:,-1]
+    if axis[1]<0:axis=-axis
+    cross=np.array([-axis[1],axis[0]])
+    u=points@axis;v=points@cross
+    length=max(float(np.ptp(u)),9);breadth=max(float(np.ptp(v)),6)
+    group=min(G[k]['island_groups'],key=lambda q:(q['location'][0]-cx)**2+(q['location'][1]-cy)**2)
+    if any(abs(value-center)>extent*.8 for value,center,extent in zip([cx,cy],group['location'],group['extent'])):
+        group={'name':'未编号近岸附岛','type':'大陆架残余岩岛','location':[cx,cy]}
+    mixed=any(w in group['type'] for w in ['沙','堆积','珊瑚','礁坪'])
+    flat=mixed and (length<45 or len(yy)<350)
+    return cx,cy,axis,cross,u,v,length,breadth,group,flat
+
+def island_streams(k,labs,parts,main):
+    streams=[]
+    for n,(yy,xx) in enumerate(parts,1):
+        if n==main or len(yy)<1200:continue
+        cx,cy,axis,cross,u,v,length,breadth,group,flat=island_form(k,yy,xx)
+        if flat or group['name']=='星沚群':continue
+        # Short separate catchments terminate on this island's own shore.
+        for side in ([1,-1] if length>130 else [1]):
+            target=np.array([cx,cy])+axis*length*(-.1 if side==1 else .17)
+            near=int(np.argmin((xx*STEP-target[0])**2+(yy*STEP-target[1])**2))
+            source=np.array([xx[near]*STEP,yy[near]*STEP],float)
+            direction=cross*side+axis*.24;direction/=np.linalg.norm(direction)
+            pts=[source.tolist()]
+            for distance in np.arange(STEP,max(length,breadth)*1.5,STEP):
+                point=source+direction*distance
+                ix,iy=np.rint(point/STEP).astype(int)
+                if not (0<=iy<labs.shape[0] and 0<=ix<labs.shape[1] and labs[iy,ix]==n):break
+                pts.append(point.tolist())
+            if len(pts)>8:
+                chosen=[pts[0],pts[len(pts)//3],pts[2*len(pts)//3],pts[-1]]
+                streams.append({'group':group['name'],'component':n,'points':chosen,'seasonal':True})
+    return streams
+
+def relative_relief(k,f,body,labs,parts,streams):
     # Original cartographic relief built from the agreed geographic regions, not from edited imagery.
     # Values are relative illustration levels, never measured elevations in metres.
     Y,X=np.mgrid[:f.shape[0],:f.shape[1]];X=X*STEP;Y=Y*STEP;seed={'衡岑':17,'乌弥尔':41,'萨阑':73}[k]
@@ -72,15 +119,18 @@ def relative_relief(k,f,body,labs,parts):
     main=int(labs[np.where(body)[0][0],np.where(body)[1][0]])
     for n,(yy,xx) in enumerate(parts,1):
         if n==main or len(yy)<20:continue
-        cx,cy=float(np.mean(xx)*STEP),float(np.mean(yy)*STEP);rx=(xx.max()-xx.min()+1)*STEP;ry=(yy.max()-yy.min()+1)*STEP
-        group=min(G[k]['island_groups'],key=lambda q:(q['location'][0]-cx)**2+(q['location'][1]-cy)**2)
-        flat=any(w in group['type'] for w in ['沙','堆积','珊瑚','礁坪'])
+        cx,cy,axis,cross,u,v,length,breadth,group,flat=island_form(k,yy,xx)
         if flat:z[yy,xx]=.22+noise[yy,xx]*.15;continue
-        # Off-centre residual ridges and side valleys distinguish eroded shelf fragments from uniform cones.
-        xxv=X[yy,xx];yyv=Y[yy,xx];dx=(xxv-cx-rx*.11)/(max(rx*.39,9));dy=(yyv-cy+ry*.07)/(max(ry*.35,9))
-        ridge=np.exp(-(dx*dx+dy*dy))
-        amp=.5 if max(rx,ry)<30 else 1.05 if max(rx,ry)<100 else 1.65
+        # Residual ridges follow each fragment's long axis, with an uneven crest and side valleys.
+        crest=breadth*(.1+.055*np.sin(u/max(length,1)*13))
+        ridge=np.exp(-((v-crest)/max(breadth*.21,4))**2)*np.clip(1-(u/max(length*.57,5))**2,0,1)
+        ridge*=.78+.22*np.cos(u/max(length,1)*19)**2
+        amp=.5 if length<30 else 1.05 if length<100 else 1.65
+        if group['name']=='星沚群':amp=.5
         z[yy,xx]=.33+amp*ridge+noise[yy,xx]*.55
+    for stream in streams:
+        dist,t=lineweight(stream['points']);weight=np.exp(-dist/16)*(labs==stream['component'])
+        floor=np.minimum(z,.95*(1-t)+.2);z=z*(1-weight)+floor*weight
     assert np.isfinite(z).all(),(k,'地貌表达场存在无效值')
     breaks=np.array([0,.6,1.2,1.95,2.8,3.65,4.2]);colors=np.array([[195,219,170],[202,221,170],[230,222,169],[212,190,143],[185,151,112],[231,223,207],[248,246,238]],float)
     rgb=np.zeros((*f.shape,3),float)
@@ -96,6 +146,11 @@ def closest(mask,x,y):
     if 0<=iy<mask.shape[0] and 0<=ix<mask.shape[1] and mask[iy,ix]:return x,y
     yy,xx=np.where(mask);assert len(xx)
     n=int(np.argmin((xx*STEP-x)**2+(yy*STEP-y)**2));return float(xx[n]*STEP),float(yy[n]*STEP)
+
+def lake_mask(k,shape):
+    image=Image.new('L',(shape[1],shape[0]));draw=ImageDraw.Draw(image)
+    for lake in G[k]['lakes']:draw.polygon([(x/STEP,y/STEP) for x,y in lake['points']],fill=255)
+    return np.array(image.filter(ImageFilter.MaxFilter(5)))>0
 
 def prepare(k):
     d=json.loads((DEST/(k+'·图层数据.json')).read_text(encoding='utf-8'))
@@ -135,23 +190,41 @@ def prepare(k):
             if owner in effective_moves:
                 dx,dy,newcode,min_y=effective_moves[owner]
                 if isle['y']>min_y:isle.update(x=isle['x']+dx,y=isle['y']+dy,country_code='H12',district_code=newcode)
+    if k=='萨阑':
+        yy,xx=np.mgrid[:f.shape[0],:f.shape[1]];xx=xx*STEP;yy=yy*STEP
+        channels=[('井塔海峡',(xx>=111)&(xx<=135)&(yy>=270)&(yy<=450)),
+                  ('两帆北汊',(xx>=20)&(xx<=220)&(yy>=744)&(yy<=759))]
+        for name,mask in channels:
+            f[mask]=0;reg[mask]=0
+            corrections.append({'部位':name,'说明':'移除旧海陆栅格把已设定岛群接回大陆的错误陆颈；表示原有沉水鞍部，不是742年新开水道'})
+        port_id=next(i+1 for i,r in enumerate(d['districts']) if r['code']=='S05-04')
+        copper_id=next(i+1 for i,r in enumerate(d['districts']) if r['code']=='S05-10')
+        reg[reg==port_id]=copper_id
+        shore=[[400,590],[350,592],[310,600],[270,620],[225,632],[175,635],[140,630],[120,640],[135,662],[180,678],[225,672],[275,659],[320,646],[365,637],[407,634]]
+        image=Image.new('L',(f.shape[1],f.shape[0]));ImageDraw.Draw(image).polygon([(x/STEP,y/STEP) for x,y in shore],fill=1)
+        port=(np.array(image)>0)&(f>0);f[port]=5;reg[port]=port_id
+        r=d['districts'][port_id-1]
+        r.update(x=169.5,y=646.5,seat_x=169.5,seat_y=646.5,label_x=204,label_y=649.5)
+        corrections.append({'部位':'照浦海港','说明':'按既有两门海岸港设定恢复下河港域及治所；旧港区内陆误绘部分归相邻铜水图形，不表示世界内移民或领土转让'})
     labs,parts=components(f>0);main=max(range(len(parts)),key=lambda n:len(parts[n][0]))+1;body=labs==main
+    water=lake_mask(k,f.shape)
     assert set(np.unique(reg))==set(range(len(d['districts'])+1))
     for i,r in enumerate(d['districts'],1):
         assert np.all(f[reg==i]==int(r['country_code'][1:])),r['code']
         # Mainland administrative cores are placed on the mainland; offshore appendages keep their district identity.
-        own=(reg==i)&body
-        if not own.any():own=reg==i
+        own=(reg==i)&body&~water
+        if not own.any():own=(reg==i)&~water
         sx,sy=closest(own,r.get('seat_x',r['x']),r.get('seat_y',r['y']));r['seat_x']=sx;r['seat_y']=sy;r['x']=sx;r['y']=sy
         lx,ly=closest(own,r['label_x'],r['label_y']);r['label_x']=lx;r['label_y']=ly
+    d['island_streams']=island_streams(k,labs,parts,main)
     d['land_paths']=allpaths(f>0)
     d['country_paths']=[allpaths(f==i) for i in range(1,len(d['countries'])+1)]
     d['national_boundaries']=geo.boundaries(f,True,STEP)
     owner={i+1:r['country_code'] for i,r in enumerate(d['districts'])}
     d['district_boundaries']=[p for p in geo.boundaries(reg,False,STEP) if owner[p['pair'][0]]==owner[p['pair'][1]]]
     for c in d['countries']:
-        ci=int(c['code'][1:]);core=(f==ci)&body
-        if not core.any():core=f==ci
+        ci=int(c['code'][1:]);core=(f==ci)&body&~water
+        if not core.any():core=(f==ci)&~water
         c['label_x'],c['label_y']=closest(core,c['label_x'],c['label_y'])
         c['capital_x'],c['capital_y']=closest(core,c['capital_x'],c['capital_y'])
         c['districts']=[r for r in d['districts'] if r['country_code']==c['code']]
@@ -190,12 +263,14 @@ def physical(k,d,f,body,labs,parts):
         else:points=[(cx-rx*.3,cy-ry*.09),(cx-rx*.05,cy+ry*.15),(cx+rx*.25,cy-ry*.12)]
         out.append(f'<g clip-path="url(#isle{n})"><path d="{path(points)}" fill="none" stroke="{PALETTE[2]}" stroke-width="{min(rx,ry)*.58:.1f}" stroke-linecap="round"/><path d="{path(points)}" fill="none" stroke="url(#hill)" stroke-width="{min(rx,ry)*.29:.1f}" stroke-linecap="round"/></g>')
     # The early flat stroke draft is superseded by continuous terrain tints with subdued shading.
-    relief=relative_relief(k,f,body,labs,parts)
+    relief=relative_relief(k,f,body,labs,parts,d['island_streams'])
     out=[out[0],out[1],out[2],'<rect width="1600" height="1350" fill="url(#sea)"/>',f'<path d="{land}" fill="none" stroke="#dfefed" stroke-width="9"/>',f'<image width="{f.shape[1]*STEP}" height="{f.shape[0]*STEP}" href="data:image/png;base64,{relief}"/>','<g clip-path="url(#land)">']
     for lake in G[k]['lakes']:out.append(f'<path d="{path(lake["points"],True)}" fill="#9cc8dc" stroke="#4f96ba" stroke-width=".7"/>')
     for river in G[k]['rivers']:
-        width=1.7 if river.get('tributary_of') else 2.6;dash=' stroke-dasharray="5 2"' if river.get('seasonal') or river.get('type')=='人工渠' else ''
-        out.append(f'<path d="{path(river["points"])}" fill="none" stroke="#287fac" stroke-width="{width}" stroke-linecap="round"{dash}/>')
+        width=1.7 if river.get('tributary_of') else 2.6;dash=' stroke-dasharray="5 2"' if river.get('seasonal') or '人工' in river.get('waterway_type','') else ''
+        out.append(f'<path d="{water_path(river["points"])}" fill="none" stroke="#287fac" stroke-width="{width}" stroke-linecap="round"{dash}/>')
+    for stream in d['island_streams']:
+        out.append(f'<path d="{water_path(stream["points"])}" fill="none" stroke="#287fac" stroke-width="1.1" stroke-dasharray="3 1.5"/>')
     out += ['</g>',f'<path d="{land}" fill="none" stroke="#567e77" stroke-width=".65"/>']
     return out
 
@@ -209,34 +284,34 @@ def legend(out,y=1110):
     for i,(name,col,dash,width) in enumerate(symbols):
         x=1620+(i%2)*225;yy=y+(i//2)*22
         out.append(f'<path d="M {x},{yy-4} h 25" fill="none" stroke="{col}" stroke-width="{width}" stroke-dasharray="{dash}"/>');out.append(txt(x+32,yy,name,10,anchor='start',halo=0))
-    out+= [txt(1620,y+51,'双圆：国都　小圆：二级治所',10,anchor='start',halo=0),txt(1620,y+71,'地势等级示意；面积、海距依正文',10,anchor='start',halo=0),txt(1620,y+91,'共历742年秋 · 第四版',10,anchor='start',halo=0)]
+    out+= [txt(1620,y+51,'双圆：国都　小圆：二级治所',10,anchor='start',halo=0),txt(1620,y+71,'地势等级示意；面积、海距依正文',10,anchor='start',halo=0),txt(1620,y+91,'共历742年秋 · 第五版',10,anchor='start',halo=0)]
 
-def country_text(c,f):
-    ci=int(c['code'][1:]);x,y=c['label_x'],c['label_y'];word=c['label'];size=26;spacing=3
+def country_text(c,f,water):
+    ci=int(c['code'][1:]);x,y=c['label_x'],c['label_y'];word=c['label'];size=14;spacing=3
     for sz in [26,24,22,20,18,16,14]:
         half=(len(word)*sz+(len(word)-1)*spacing)/2
         pts=[(round((x+dx)/STEP),round((y+dy)/STEP)) for dx in [-half,0,half] for dy in [-sz/2,sz/2]]
-        if all(0<=yy<f.shape[0] and 0<=xx<f.shape[1] and f[yy,xx]==ci for xx,yy in pts):size=sz;break
+        if all(0<=yy<f.shape[0] and 0<=xx<f.shape[1] and f[yy,xx]==ci and not water[yy,xx] for xx,yy in pts):size=sz;break
     c['label_size']=size
     return [txt(x,y,word,size,'#403a3d',spacing=spacing,halo=2),txt(x,y+16,c['label_suffix'],9.5,'#5b5454',spacing=1,halo=1.3)]
 
 def render(k):
-    d,f,reg,body,labs,parts=prepare(k);base=physical(k,d,f,body,labs,parts)
+    d,f,reg,body,labs,parts=prepare(k);base=physical(k,d,f,body,labs,parts);water=lake_mask(k,f.shape)
     start=[f'<svg xmlns="http://www.w3.org/2000/svg" width="8000" height="5143" viewBox="0 0 {W} {H}">','<rect width="2100" height="1350" fill="#f7f4e8"/>']
     out=start+base+['<rect x="1600" width="500" height="1350" fill="#f7f4e8"/>']
     for p in d['district_boundaries']:out.append(f'<path d="{path(p["points"])}" fill="none" stroke="#626f65" stroke-width=".65" stroke-dasharray="3 2" opacity=".8"/>')
     for p in d['national_boundaries']:out.append(f'<path d="{path(p["points"])}" fill="none" stroke="#faf9e6" stroke-width="3"/><path d="{path(p["points"])}" fill="none" stroke="#754a62" stroke-width="1.5" stroke-dasharray="8 2 1 2"/>')
     reserved=[]
     for c in d['countries']:
-        out+=country_text(c,f);reserved.append((c['label_x'],c['label_y'],len(c['label'])*c['label_size']/2+10,32))
+        out+=country_text(c,f,water);reserved.append((c['label_x'],c['label_y'],len(c['label'])*c['label_size']/2+10,32))
     for r in d['districts']:
         sx,sy=r['seat_x'],r['seat_y']
         if not any(abs(sx-c['capital_x'])<3 and abs(sy-c['capital_y'])<3 for c in d['countries']):out.append(f'<circle cx="{sx}" cy="{sy}" r="1.5" fill="#384747" stroke="#fff" stroke-width=".45"/>')
     for i,r in enumerate(d['districts'],1):
         x,y=r['label_x'],r['label_y'];word=r['name'];size=8.7 if k!='衡岑' else 10
         if any(abs(x-a)<b+len(word)*size/2 and abs(y-c)<h for a,c,b,h in reserved):
-            mask=(reg==i)&body
-            if not mask.any():mask=reg==i
+            mask=(reg==i)&body&~water
+            if not mask.any():mask=(reg==i)&~water
             yy,xx=np.where(mask);candidates=list(zip(xx[::max(1,len(xx)//300)]*STEP,yy[::max(1,len(yy)//300)]*STEP))
             free=[(a,b) for a,b in candidates if all(abs(a-q)>w+len(word)*size/2 or abs(b-t)>h for q,t,w,h in reserved)]
             if free:x,y=min(free,key=lambda q:(q[0]-x)**2+(q[1]-y)**2)
@@ -280,7 +355,14 @@ def render(k):
     natural.append(txt(1620,45,'自然单元与阅读提示',17,anchor='start',halo=0));y=82
     for n,label in enumerate(q for q in G[k]['labels'] if q['type']=='自然单元'):
         natural.append(txt(1620,y,f'{n+1:02d}　'+label['name'],13,anchor='start',halo=0));y+=34
-    natural+= [txt(1620,y+20,'岛群成因与淡水条件见地理志',12,anchor='start',halo=0),txt(1620,y+44,'低谷留白，山脊与水系分别核定',12,anchor='start',halo=0),txt(1620,y+68,'高原与山地有别，绿色不等于森林',12,anchor='start',halo=0)]
+    y+=25;natural.append(txt(1620,y,'岛群对照',16,anchor='start',halo=0));y+=30
+    island_cells=np.where((f>0)&~body)
+    for i,group in enumerate(G[k]['island_groups'],1):
+        gx,gy=group['location'];near=int(np.argmin((island_cells[1]*STEP-gx)**2+(island_cells[0]*STEP-gy)**2))
+        x,y0=float(island_cells[1][near]*STEP),float(island_cells[0][near]*STEP)
+        natural.append(txt(x,y0,'岛'+str(i),12,'#225f7b',halo=2.3))
+        natural.append(txt(1620,y,f'岛{i:02d}　'+group['name'],12,anchor='start',halo=0));y+=26
+    natural+= [txt(1620,y+20,'成因、补水及史事见山川岛屿考',12,anchor='start',halo=0),txt(1620,y+44,'岛上虚线为季节短水，低礁不设大河',12,anchor='start',halo=0),txt(1620,y+68,'高原与山地有别，绿色不等于森林',12,anchor='start',halo=0)]
     legend(natural,1090);natural.append('</svg>')
     (A/(str(int(PREFIX[k])+3).zfill(2)+'·'+k+'·自然地理图.svg')).write_text('\n'.join(natural),encoding='utf-8')
     # Store a reusable native physical layer for the continental overview.
@@ -302,6 +384,8 @@ def world():
         out.append(f'<g transform="translate({dx} {dy}) scale({scale})">{inner}')
         for p in d['national_boundaries']:out.append(f'<path d="{path(p["points"])}" fill="none" stroke="#6b4160" stroke-width="2.6" stroke-dasharray="9 3 1 3"/>')
         for c in d['countries']:out.append(txt(c['label_x'],c['label_y'],c['label'],c['label_size']*1.35,spacing=3,halo=2))
+        for c in d['countries']:
+            cx,cy=c['capital_x'],c['capital_y'];out.append(f'<circle cx="{cx}" cy="{cy}" r="4" fill="#fff" stroke="#70516b" stroke-width="1.3"/><circle cx="{cx}" cy="{cy}" r="1.6" fill="#70516b"/>')
         out+=['</g>',txt(dx+160,dy-28,k,29,spacing=5,halo=1)]
         out.append(txt(2132,y,k,24,anchor='start',spacing=4,halo=0));y+=39
         for c in d['countries']:out.append(txt(2132,y,c['code']+' '+c['name'],min(17,250/len(c['code']+' '+c['name'])),anchor='start',halo=0));y+=31
