@@ -1,0 +1,111 @@
+{
+  "scope": "待核书稿/02·卷一·衡岑；正式源未改",
+  "ordinary_word_errors": [
+    {
+      "old": "分水",
+      "wrong": "两分",
+      "repair": "分水",
+      "examples": [
+        "两分岭→分水岭",
+        "两分资格→分水资格",
+        "部两分利→部分水利"
+      ],
+      "rule": "分水为普通水务词，不得参与跨卷短名替换"
+    },
+    {
+      "old": "谷风",
+      "wrong": "谷吹",
+      "repair": "谷风",
+      "rule": "地形气象词，非姓名或地名"
+    },
+    {
+      "old": "合流",
+      "wrong": "会槽",
+      "repair": "合流",
+      "rule": "合流为水文与礼式接续动词，非聚落名"
+    },
+    {
+      "old": "西坡",
+      "wrong": "背坡",
+      "repair": "西坡",
+      "rule": "方位词或牧人支系自称，不能跨卷移入另一地方专名"
+    },
+    {
+      "old": "梯田寨盟",
+      "wrong": "乌笼层田寨盟",
+      "repair": "梯田寨盟",
+      "rule": "乌笼层田寨只为具名农寨，不能代替梯田这一普通地势/农业词"
+    }
+  ],
+  "name_conflicts": [
+    {
+      "old": "韩承潮信/韩潮信",
+      "wrong": "邗仲岩/邗禾各列一人",
+      "canonical": "邗仲岩",
+      "rule": "同一历史君主的长式与口语简称，本卷合用一完整新名；旧名末字信须作为旧写说明"
+    },
+    {
+      "old": "季原",
+      "wrong": "季季原",
+      "canonical": "季原",
+      "rule": "避免冠名与本名机械重复；原为古王铭名，并无独立更名事实"
+    },
+    {
+      "old": "许氏造纸支",
+      "wrong": "正文鄦氏、人物胥姓不一",
+      "canonical": "胥氏",
+      "rule": "本卷人物完整新名均为胥姓；同姓山路关吏未推定同宗，若根另定纸坊冠名须同时改全体纸坊人物"
+    },
+    {
+      "old": "纳维",
+      "wrong": "名源正文奈维与主名纳维洛不一",
+      "canonical": "纳维洛",
+      "rule": "主名依注册表；旧写纳维作异名"
+    },
+    {
+      "old": "白牙母",
+      "wrong": "名源白牙津母与正文白牙渡母不一",
+      "canonical": "白牙渡母",
+      "rule": "渡是护送船只的祭辞词义，不借另一卷津地名"
+    },
+    {
+      "old": "湾城人的湾港、岛港支系",
+      "wrong": "芒鹭港的湾港、岛港",
+      "canonical": "勒汶湾人的湾港、岛港",
+      "rule": "原属西岸文明群体，不移到胥泊芒鹭港"
+    },
+    {
+      "old": "上泉、渠尾支系",
+      "wrong": "伊勒上泉社、渠尾",
+      "canonical": "上泉、渠尾",
+      "rule": "宽域生活支系不等于一个具名三级水社"
+    }
+  ],
+  "repeated_name_errors": [
+    "阿绰祖山祖山→阿绰祖山",
+    "乌笼乌笼氏→乌笼氏",
+    "台毗台毗氏→台毗氏",
+    "郦迦郦迦氏→郦迦氏",
+    "裴戍裴戍氏→裴戍氏",
+    "褪汀圩圩→褪汀圩"
+  ],
+  "context_only": [
+    "罗勒保留为文明、文字、语族或文明宽称；政治共和国及城市改勒汶",
+    "阿胄/勒贡/奥斯坎行政地域和阿绰衡脊北中南段需分别核",
+    "old_short不能反复套入已经变换的新姓名"
+  ],
+  "review_statistics": {
+    "reviewed_original_chapters": 24,
+    "new_chapters": 1,
+    "removed_inserted_template_blocks": 221,
+    "retained_country_accounts": 7,
+    "retained_district_seat_combined_accounts": 37,
+    "retained_religion_accounts": 5,
+    "registry_entries": 748,
+    "current_states": 7,
+    "historical_states": 5,
+    "districts": 37,
+    "seats": 37,
+    "chinese_chars_chapter17": 2981
+  }
+}
